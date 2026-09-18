@@ -703,42 +703,6 @@ Validasi input digunakan untuk memastikan data yang dimasukkan pengguna sesuai d
 
 ---
 
-# 🛠️ Teknologi yang Digunakan
-
-- **Java** — Bahasa pemrograman yang digunakan.
-- **NetBeans IDE** — Digunakan untuk membuat dan menjalankan project.
-- **ArrayList** — Digunakan untuk menyimpan data pesanan.
-- **Object-Oriented Programming (PBO)** — Konsep utama dalam pembuatan program.
-- **Git** — Digunakan untuk mengelola versi project.
-- **GitHub** — Digunakan untuk menyimpan dan mengumpulkan project.
-
----
-
-# 📁 Repository
-
-**Nama Repository:**
-
-```text
-Minpro-2-PBO-SistemJastip
-```
-
-**Link Repository:**
-
-> 🔗 Tempel link GitHub project di sini
-
----
-
-# 👤 Author
-
-**Siti Nursinta**
-
-Program Studi Sistem Informasi  
-Universitas Mulawarman
-
-**Mini Project 2 — Pemrograman Berorientasi Objek**
-
----
-
 ## ✨ Penutup
 
 Program **Sistem Jasa Titip Luar Negeri** dibuat sebagai implementasi konsep Pemrograman Berorientasi Objek dalam bentuk sistem pengelolaan pesanan.
