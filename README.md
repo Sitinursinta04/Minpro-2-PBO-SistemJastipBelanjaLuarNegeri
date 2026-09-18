@@ -1,4 +1,4 @@
-# 🛍️ SISTEM JASA TITIP LUAR NEGERI
+# 🛍️ SISTEM JASA TITIP BELANJA LUAR NEGERI
 
 ## 📖 Deskripsi Singkat Program
 
