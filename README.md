@@ -1,6 +1,6 @@
 # 🛍️ Sistem Jasa Titip Luar Negeri
 
-> **Mini Project 2 — Pemrograman Berorientasi Objek**
+> **Mini Project 2 - Pemrograman Berorientasi Objek**
 
 ---
 
