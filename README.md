@@ -1,627 +1,46 @@
 # 🛍️ SISTEM JASA TITIP LUAR NEGERI
 
-## 📌 Deskripsi Singkat Program
+## 📖 Deskripsi Singkat Program
 
-**Sistem Jasa Titip Luar Negeri** merupakan program berbasis Java yang dibuat untuk membantu proses pengelolaan pesanan jasa titip barang dari luar negeri.
+**Sistem Jasa Titip Luar Negeri** merupakan program berbasis Java yang digunakan untuk membantu mengelola data pesanan jasa titip dari luar negeri.
 
-Program ini memungkinkan pengguna untuk mengelola data pelanggan, barang, pembayaran, dan status pesanan melalui menu yang tersedia. Program juga membedakan jenis pesanan menjadi **Jastip Fashion** dan **Jastip Skincare** dengan menerapkan konsep **Inheritance** dan **Polymorphism**.
+Program ini memungkinkan pengguna untuk mengelola data pelanggan, barang yang dipesan, jumlah barang, berat barang, pembayaran, serta status pesanan. Sistem juga membedakan jenis pesanan menjadi **Jastip Fashion** dan **Jastip Skincare** menggunakan konsep **Inheritance**.
 
-Program dibuat sebagai penerapan materi **Pemrograman Berorientasi Objek (PBO)** yang telah dipelajari. Beberapa konsep yang diterapkan dalam program antara lain:
+Program menyediakan beberapa menu utama, yaitu:
 
-- Encapsulation
-- Inheritance
-- Constructor
-- Access Modifier
-- ArrayList
-- CRUD
-- Input Validation
-- Polymorphism
+- Tambah Pesanan
+- Lihat Pesanan
+- Ubah Pesanan
+- Hapus Pesanan
+- Lihat Struk
+- Ubah Status
+- Ringkasan Pesanan
+- Keluar
 
-Selain menerapkan ketentuan utama tersebut, program juga dikembangkan dengan beberapa fitur tambahan yang disesuaikan dengan proses jasa titip, seperti **ID pesanan otomatis, status pesanan, perhitungan biaya berdasarkan berat barang, struk pesanan, dan ringkasan pesanan**.
-
----
-
-# 🎯 Tujuan Program
-
-Program **Sistem Jasa Titip Luar Negeri** dibuat dengan tujuan:
-
-1. Membuat sistem sederhana untuk mengelola pesanan jasa titip barang dari luar negeri.
-2. Menerapkan konsep dasar Pemrograman Berorientasi Objek menggunakan bahasa Java.
-3. Menerapkan konsep encapsulation untuk menjaga dan mengatur akses terhadap data.
-4. Menerapkan inheritance untuk membedakan jenis pesanan Fashion dan Skincare.
-5. Menerapkan CRUD untuk mengelola data pesanan.
-6. Menerapkan validasi input agar data yang dimasukkan pengguna sesuai dengan ketentuan.
-7. Membuat program yang memiliki alur penggunaan yang lebih mendekati proses jasa titip pada kondisi nyata.
+Selain menerapkan konsep yang diwajibkan pada Mini Project 2, program juga dikembangkan dengan beberapa fitur tambahan agar proses pengelolaan pesanan menjadi lebih terstruktur dan informatif.
 
 ---
 
-# 🔄 Alur Program
+## 🎯 Tujuan Program
 
-Program dimulai dengan membuat objek `KelolaPesanan` dan `ValidasiInput`. Pada saat program dijalankan, sistem juga menyediakan beberapa **data dummy** yang langsung dimasukkan ke dalam `ArrayList`.
+Program ini dibuat sebagai penerapan konsep **Pemrograman Berorientansi Object (PBO)** dalam studi kasus jasa titip luar negeri.
 
-Setelah itu, sistem menampilkan menu utama. Pengguna dapat memilih menu sesuai kebutuhan.
+Tujuan program adalah:
 
-### Alur umum program:
-
-1. Program dijalankan.
-2. Sistem menyiapkan daftar pesanan.
-3. Sistem memasukkan data dummy ke dalam `ArrayList`.
-4. Sistem membuat objek `ValidasiInput`.
-5. Menu utama ditampilkan.
-6. Pengguna memilih menu.
-7. Sistem menjalankan proses sesuai pilihan.
-8. Setelah proses selesai, sistem kembali ke menu utama.
-9. Proses berulang sampai pengguna memilih menu **Keluar**.
-
-Program menggunakan perulangan `do-while`, sehingga menu akan terus muncul selama pengguna belum memilih pilihan nomor 8.
+1. Mengelola data pesanan jasa titip secara terstruktur.
+2. Menerapkan konsep **Encapsulation** pada atribut objek.
+3. Menerapkan **Inheritance** melalui pembagian jenis pesanan.
+4. Menerapkan operasi **CRUD** pada data pesanan.
+5. Menggunakan `ArrayList` untuk menyimpan kumpulan data pesanan.
+6. Menerapkan validasi terhadap input pengguna.
+7. Menerapkan nilai tambah berupa **pendekatan MVC sederhana** dan **Polymorphism**.
+8. Menambahkan beberapa fitur kreatif yang mendukung proses pengelolaan pesanan.
 
 ---
 
-# 📋 Menu Program
+# 🧩 STRUKTUR PROGRAM
 
-| No. | Menu | Fungsi |
-|---|---|---|
-| 1 | Tambah Pesanan | Menambahkan pesanan baru |
-| 2 | Lihat Pesanan | Menampilkan seluruh pesanan |
-| 3 | Ubah Pesanan | Mengubah data pesanan |
-| 4 | Hapus Pesanan | Menghapus pesanan berdasarkan ID |
-| 5 | Lihat Struk | Menampilkan struk pesanan |
-| 6 | Ubah Status | Mengubah status pesanan |
-| 7 | Ringkasan Pesanan | Menampilkan ringkasan keseluruhan pesanan |
-| 8 | Keluar | Mengakhiri program |
-
----
-
-# 🧭 Penjelasan Alur Setiap Menu
-
-## 1. Tambah Pesanan
-
-Menu **Tambah Pesanan** digunakan untuk memasukkan pesanan baru ke dalam sistem.
-
-Pertama, pengguna memilih jenis jastip:
-
-1. Jastip Fashion
-2. Jastip Skincare
-
-Setelah jenis dipilih, sistem akan membuat ID pesanan secara otomatis.
-
-Untuk pesanan Fashion, ID menggunakan format:
-
-`FSH-001`
-
-Sedangkan untuk pesanan Skincare menggunakan format:
-
-`SKN-001`
-
-Selanjutnya pengguna memasukkan data pelanggan, yaitu:
-
-- Nama pelanggan
-- Nomor telepon
-
-Setelah itu pengguna memasukkan data barang:
-
-- Nama barang
-- Negara asal
-- Harga barang
-- Berat barang
-- Jumlah barang
-
-Berat barang digunakan dalam perhitungan biaya jastip sehingga data berat tidak hanya menjadi informasi tambahan, tetapi memiliki fungsi dalam proses perhitungan.
-
-Setelah data barang dimasukkan, pengguna memilih metode pembayaran:
-
-- Transfer Bank
-- E-Wallet
-
-Sistem kemudian menghitung biaya jastip dan total pembayaran.
-
-Jika pengguna memilih **Jastip Fashion**, sistem meminta data tambahan:
-
-- Ukuran
-- Warna
-
-Jika pengguna memilih **Jastip Skincare**, sistem meminta:
-
-- Jenis kulit
-- Ukuran produk
-
-Setelah semua data lengkap, objek pesanan dibuat sesuai dengan jenis jastip yang dipilih dan dimasukkan ke dalam `ArrayList`.
-
-Status awal untuk setiap pesanan baru adalah:
-
-`Menunggu Pembayaran`
-
----
-
-## 2. Lihat Pesanan
-
-Menu **Lihat Pesanan** digunakan untuk menampilkan seluruh data pesanan yang tersimpan.
-
-Data yang ditampilkan meliputi:
-
-- ID pesanan
-- Nama pelanggan
-- Nomor telepon
-- Nama barang
-- Negara asal
-- Harga barang
-- Berat barang
-- Jumlah barang
-- Biaya jastip
-- Total pembayaran
-- Status pesanan
-
-Data tambahan juga ditampilkan sesuai dengan jenis pesanan.
-
-### Jastip Fashion
-
-Data tambahan yang ditampilkan:
-
-- Ukuran
-- Warna
-
-### Jastip Skincare
-
-Data tambahan yang ditampilkan:
-
-- Jenis kulit
-- Ukuran produk
-
-Data tersebut diambil dari objek yang tersimpan dalam `ArrayList`.
-
----
-
-## 3. Ubah Pesanan
-
-Menu **Ubah Pesanan** digunakan untuk mengubah data pesanan yang sudah tersimpan.
-
-Pengguna terlebih dahulu memasukkan ID pesanan yang ingin diubah.
-
-Sistem kemudian mencari pesanan tersebut menggunakan method:
-
-```java
-cariPesanan()
-```
-
-Jika ID ditemukan, pengguna dapat mengubah:
-
-- Nama pelanggan
-- Nomor telepon
-- Nama barang
-- Negara asal
-- Harga barang
-- Berat barang
-- Jumlah barang
-
-Setelah data baru dimasukkan, sistem menghitung kembali biaya jastip dan total pembayaran berdasarkan data terbaru.
-
-Jika ID tidak ditemukan, sistem akan menampilkan pesan:
-
-```text
-Pesanan tidak ditemukan.
-```
-
----
-
-## 4. Hapus Pesanan
-
-Menu **Hapus Pesanan** digunakan untuk menghapus data pesanan.
-
-Pengguna memasukkan ID pesanan yang ingin dihapus.
-
-Sistem mencari pesanan tersebut terlebih dahulu. Jika ditemukan, data akan dihapus dari `ArrayList`.
-
-Proses penghapusan menggunakan:
-
-```java
-daftarPesanan.remove(pesanan);
-```
-
-Jika ID tidak ditemukan, sistem akan menampilkan pesan bahwa pesanan tidak ditemukan.
-
----
-
-## 5. Lihat Struk
-
-Menu **Lihat Struk** digunakan untuk menampilkan informasi pesanan dalam bentuk struk sederhana.
-
-Struk menampilkan:
-
-- ID pesanan
-- Nama pelanggan
-- Nama barang
-- Negara asal
-- Harga barang
-- Berat barang
-- Jumlah barang
-- Biaya jastip
-- Metode pembayaran
-- Total pembayaran
-- Status pesanan
-
-Fitur ini dibuat agar informasi transaksi dapat dilihat secara lebih ringkas dan menyerupai struk pada transaksi jasa titip.
-
----
-
-## 6. Ubah Status
-
-Menu **Ubah Status** digunakan untuk memperbarui perkembangan pesanan.
-
-Program menyediakan lima pilihan status:
-
-1. Menunggu Pembayaran
-2. Pembayaran Berhasil
-3. Sedang Dibeli
-4. Dalam Pengiriman
-5. Pesanan Selesai
-
-Pengguna memilih status sesuai dengan kondisi pesanan.
-
-Status tersebut kemudian disimpan pada objek pesanan sehingga perkembangan setiap pesanan dapat diperbarui.
-
----
-
-## 7. Ringkasan Pesanan
-
-Menu **Ringkasan Pesanan** digunakan untuk menampilkan gambaran keseluruhan data pesanan.
-
-Informasi yang ditampilkan adalah:
-
-- Total pesanan
-- Total pesanan Fashion
-- Total pesanan Skincare
-- Total berat barang
-- Total pembayaran
-
-Sistem menghitung informasi tersebut berdasarkan seluruh data pesanan yang terdapat dalam `ArrayList`.
-
----
-
-## 8. Keluar
-
-Menu **Keluar** digunakan untuk menghentikan program.
-
-Ketika pengguna memilih pilihan nomor 8, perulangan program berhenti dan sistem menampilkan pesan bahwa program telah selesai.
-
----
-
-# 📦 Data Dummy
-
-Program menyediakan data dummy yang dimasukkan ke dalam `ArrayList` pada saat objek `KelolaPesanan` dibuat.
-
-Data dummy digunakan agar ketika program pertama kali dijalankan, menu **Lihat Pesanan** sudah memiliki data yang dapat ditampilkan.
-
-Dengan adanya data dummy, pengguna dapat langsung melihat hasil penerapan program tanpa harus menambahkan data terlebih dahulu.
-
-## Data Dummy 1 - Jastip Fashion
-
-| Data | Nilai |
-|---|---|
-| ID Pesanan | FSH-001 |
-| ID Pelanggan | PLG001 |
-| Nama Pelanggan | Sinta |
-| Nomor Telepon | 081234567890 |
-| Nama Barang | Nike Air Force 1 '07 |
-| Negara Asal | Amerika Serikat |
-| Harga Barang | Rp2.500.000 |
-| Berat | 1,5 kg |
-| Jumlah | 1 |
-| Biaya Jastip | Rp75.000 |
-| Total Pembayaran | Rp2.575.000 |
-| Metode Pembayaran | Transfer Bank |
-| Status | Menunggu Pembayaran |
-| Ukuran | 39 |
-| Warna | Putih |
-
-## Data Dummy 2 - Jastip Skincare
-
-| Data | Nilai |
-|---|---|
-| ID Pesanan | SKN-001 |
-| ID Pelanggan | PLG002 |
-| Nama Pelanggan | Aisyah |
-| Nomor Telepon | 081298765432 |
-| Nama Barang | Laneige Water Sleeping Mask |
-| Negara Asal | Korea Selatan |
-| Harga Barang | Rp450.000 |
-| Berat | 0,5 kg |
-| Jumlah | 1 |
-| Biaya Jastip | Rp25.000 |
-| Total Pembayaran | Rp475.000 |
-| Metode Pembayaran | E-Wallet |
-| Status | Pembayaran Berhasil |
-| Jenis Kulit | Normal |
-| Ukuran Produk | 70 ml |
-
----
-
-# 🧑‍💻 Penerapan Konsep PBO
-
-## 1. Encapsulation
-
-Encapsulation diterapkan dengan membatasi akses langsung terhadap atribut pada class.
-
-Atribut pada program menggunakan access modifier `private`.
-
-Contohnya pada class `Pelanggan`:
-
-```java
-private String idPelanggan;
-private String namaPelanggan;
-private String nomorTelepon;
-```
-
-Karena menggunakan `private`, atribut tersebut tidak dapat diakses secara langsung dari class lain.
-
-Untuk mengakses data tersebut digunakan method `getter` dan `setter`.
-
-Contoh:
-
-```java
-public String getNamaPelanggan() {
-    return namaPelanggan;
-}
-
-public void setNamaPelanggan(String namaPelanggan) {
-    this.namaPelanggan = namaPelanggan;
-}
-```
-
-Getter digunakan untuk mengambil nilai atribut, sedangkan setter digunakan untuk mengubah nilai atribut.
-
-Encapsulation diterapkan pada beberapa class seperti:
-
-- `Pelanggan`
-- `Barang`
-- `Pembayaran`
-- `PesananJastip`
-- `JastipFashion`
-- `JastipSkincare`
-- `KelolaPesanan`
-- `ValidasiInput`
-
----
-
-## 2. Access Modifier
-
-Access modifier digunakan untuk menentukan tingkat akses terhadap atribut dan method.
-
-Pada program ini, atribut utama menggunakan:
-
-```java
-private
-```
-
-Sedangkan constructor dan method yang perlu digunakan oleh class lain menggunakan:
-
-```java
-public
-```
-
-Contoh:
-
-```java
-private double harga;
-private double berat;
-```
-
-dan constructor:
-
-```java
-public Barang(String namaBarang, String negaraAsal, double harga, double berat) {
-    this.namaBarang = namaBarang;
-    this.negaraAsal = negaraAsal;
-    this.harga = harga;
-    this.berat = berat;
-}
-```
-
-Penggunaan `private` dan `public` juga mendukung penerapan encapsulation pada program.
-
----
-
-## 3. Constructor
-
-Constructor digunakan untuk memberikan nilai awal ketika sebuah objek dibuat.
-
-Contohnya pada class `Barang`:
-
-```java
-public Barang(String namaBarang, String negaraAsal, double harga, double berat) {
-    this.namaBarang = namaBarang;
-    this.negaraAsal = negaraAsal;
-    this.harga = harga;
-    this.berat = berat;
-}
-```
-
-Constructor tersebut menerima data barang ketika objek dibuat.
-
-Contoh penggunaan:
-
-```java
-Barang barang = new Barang(
-    namaBarang,
-    negaraAsal,
-    harga,
-    berat
-);
-```
-
-Dengan constructor, objek dapat langsung memiliki data ketika pertama kali dibuat.
-
-Constructor juga diterapkan pada class:
-
-- `Pelanggan`
-- `Barang`
-- `Pembayaran`
-- `PesananJastip`
-- `JastipFashion`
-- `JastipSkincare`
-- `KelolaPesanan`
-- `ValidasiInput`
-
----
-
-# 🌳 Inheritance
-
-Inheritance merupakan konsep pewarisan sifat dari superclass kepada subclass.
-
-Pada program ini terdapat satu superclass:
-
-**Superclass:**
-
-`PesananJastip`
-
-dan dua subclass:
-
-- `JastipFashion`
-- `JastipSkincare`
-
-Hubungan tersebut digunakan karena kedua jenis jastip memiliki data dasar pesanan yang sama, tetapi masing-masing memiliki informasi tambahan yang berbeda.
-
-Inheritance diterapkan menggunakan keyword `extends`.
-
-Contoh pada `JastipFashion`:
-
-```java
-public class JastipFashion extends PesananJastip {
-```
-
-Contoh pada `JastipSkincare`:
-
-```java
-public class JastipSkincare extends PesananJastip {
-```
-
-Kedua subclass tersebut dapat menggunakan data dan method yang berasal dari `PesananJastip`.
-
-Selain `extends`, program juga menggunakan `super()` pada constructor subclass untuk memanggil constructor dari superclass.
-
-Contoh:
-
-```java
-super(
-    idPesanan,
-    pelanggan,
-    barang,
-    jumlah,
-    pembayaran,
-    statusPesanan
-);
-```
-
-Dengan inheritance, data umum pesanan cukup didefinisikan pada superclass, sedangkan data yang bersifat khusus diletakkan pada masing-masing subclass.
-
----
-
-# 👕 JastipFashion sebagai Subclass
-
-`JastipFashion` merupakan subclass dari `PesananJastip`.
-
-Class ini mewarisi data umum dari `PesananJastip`, kemudian memiliki atribut tambahan yang khusus digunakan untuk barang fashion:
-
-```java
-private String ukuran;
-private String warna;
-```
-
-Atribut `ukuran` digunakan untuk menyimpan ukuran barang fashion, sedangkan `warna` digunakan untuk menyimpan warna barang.
-
-Constructor `JastipFashion` menggunakan `super()` untuk memanggil constructor dari superclass.
-
-Selain itu, class ini melakukan overriding terhadap method `tampilkanData()` untuk menambahkan informasi ukuran dan warna.
-
-```java
-@Override
-public void tampilkanData() {
-    super.tampilkanData();
-    System.out.println("Ukuran           : " + ukuran);
-    System.out.println("Warna            : " + warna);
-}
-```
-
----
-
-# 🧴 JastipSkincare sebagai Subclass
-
-`JastipSkincare` juga merupakan subclass dari `PesananJastip`.
-
-Class ini mewarisi data umum pesanan dan memiliki atribut tambahan:
-
-```java
-private String jenisKulit;
-private int ukuranProduk;
-```
-
-`jenisKulit` digunakan untuk menyimpan jenis kulit yang sesuai dengan produk skincare, sedangkan `ukuranProduk` digunakan untuk menyimpan ukuran produk dalam satuan mililiter.
-
-Constructor `JastipSkincare` menggunakan `super()` untuk memanggil constructor superclass.
-
-Class ini juga melakukan overriding terhadap method `tampilkanData()`.
-
-```java
-@Override
-public void tampilkanData() {
-    super.tampilkanData();
-    System.out.println("Jenis Kulit      : " + jenisKulit);
-    System.out.println("Ukuran Produk    : " + ukuranProduk + " ml");
-}
-```
-
----
-
-# 🔁 Polymorphism
-
-Polymorphism merupakan salah satu **nilai tambah** yang diterapkan dalam program.
-
-Polymorphism diterapkan melalui **method overriding**.
-
-Pada superclass `PesananJastip` terdapat method:
-
-```java
-public void tampilkanData() {
-    ...
-}
-```
-
-Method tersebut kemudian di-override pada dua subclass.
-
-## Pada JastipFashion
-
-```java
-@Override
-public void tampilkanData() {
-    super.tampilkanData();
-    System.out.println("Ukuran           : " + ukuran);
-    System.out.println("Warna            : " + warna);
-}
-```
-
-## Pada JastipSkincare
-
-```java
-@Override
-public void tampilkanData() {
-    super.tampilkanData();
-    System.out.println("Jenis Kulit      : " + jenisKulit);
-    System.out.println("Ukuran Produk    : " + ukuranProduk + " ml");
-}
-```
-
-Kedua class memiliki method dengan nama yang sama, yaitu `tampilkanData()`, tetapi hasil tampilannya berbeda sesuai dengan jenis objek.
-
-Polymorphism juga didukung oleh penggunaan:
-
-```java
-ArrayList<PesananJastip>
-```
-
-ArrayList tersebut dapat menyimpan objek `JastipFashion` dan `JastipSkincare` karena keduanya merupakan turunan dari `PesananJastip`.
-
----
-
-# 🗂️ Struktur Project
+Program dibagi menjadi beberapa package agar setiap class memiliki fungsi dan tanggung jawab yang lebih terorganisir.
 
 ```text
 SistemJastip_Minpro2
@@ -644,151 +63,188 @@ SistemJastip_Minpro2
     └── SistemJastip_Minpro2.java
 ```
 
-Struktur project dibuat dengan memisahkan class berdasarkan fungsi masing-masing agar program lebih terorganisir dan mudah dipahami.
+### Penjelasan Struktur
 
-## Model
-
-Package `Model` berisi class yang digunakan untuk merepresentasikan data dalam sistem.
-
-Class di dalamnya yaitu:
-
-- `PesananJastip`
-- `JastipFashion`
-- `JastipSkincare`
-- `Pelanggan`
-- `Barang`
-- `Pembayaran`
-
-## Logic
-
-Package `Logic` berisi class yang menangani proses pengelolaan data pesanan.
-
-Class yang digunakan adalah:
-
-`KelolaPesanan`
-
-## Helper
-
-Package `Helper` berisi class yang digunakan sebagai pendukung program.
-
-Class yang digunakan adalah:
-
-`ValidasiInput`
-
-## Main
-
-Package `com.mycompany.sistemjastip_minpro2` berisi class utama:
-
-`SistemJastip_Minpro2`
-
-Class ini menjalankan program, menampilkan menu, menerima input, dan mengatur alur program.
-
----
-
-# 🏗️ Penerapan MVC
-
-MVC diterapkan sebagai salah satu **nilai tambah** pada program.
-
-Program menggunakan pendekatan MVC sederhana dengan memisahkan bagian program berdasarkan tanggung jawabnya.
-
-## Model
-
-Bagian Model berisi class yang digunakan untuk menyimpan dan merepresentasikan data.
-
-Class tersebut terdiri dari:
-
-- `PesananJastip`
-- `JastipFashion`
-- `JastipSkincare`
-- `Pelanggan`
-- `Barang`
-- `Pembayaran`
-
-## Controller / Logic
-
-Bagian pengelolaan proses terdapat pada:
-
-`KelolaPesanan`
-
-Class ini menangani proses seperti:
-
-- Menambah pesanan
-- Menampilkan pesanan
-- Mencari pesanan
-- Mengubah pesanan
-- Menghapus pesanan
-- Mengubah status
-- Menampilkan struk
-- Menampilkan ringkasan
-
-## View / Main
-
-Bagian tampilan dan interaksi pengguna terdapat pada:
-
-`SistemJastip_Minpro2`
-
-Class tersebut menampilkan menu dan menerima input dari pengguna.
-
-Karena program dibuat dalam bentuk aplikasi console, penerapan MVC pada project ini merupakan **pendekatan MVC sederhana**, bukan penggunaan framework MVC secara penuh.
-
----
-
-# 📌 Nilai Tambah
-
-Nilai tambah dalam project ini **dibedakan dari fitur kreatif**.
-
-Nilai tambah merupakan konsep tambahan dalam penerapan pemrograman yang digunakan untuk memperkaya struktur dan penerapan OOP pada program.
-
-Nilai tambah yang diterapkan dalam project ini adalah:
-
-## 1. MVC
-
-MVC diterapkan dengan memisahkan bagian program berdasarkan tanggung jawabnya menjadi Model, Logic/Controller, dan Main/View.
-
-Penerapan ini membuat struktur program lebih terorganisir dan memudahkan pembagian fungsi setiap class.
-
-## 2. Polymorphism
-
-Polymorphism diterapkan melalui method overriding pada method `tampilkanData()`.
-
-Method tersebut terdapat pada superclass `PesananJastip` dan di-override oleh:
-
-- `JastipFashion`
-- `JastipSkincare`
-
-Penggunaan `ArrayList<PesananJastip>` juga memungkinkan objek dari kedua subclass disimpan dalam satu daftar.
-
-### Ringkasan Nilai Tambah
-
-| Nilai Tambah | Letak Penerapan |
+| Package/Class | Fungsi |
 |---|---|
-| MVC | Package `Model`, `Logic`, `Helper`, dan Main |
-| Polymorphism | Method `tampilkanData()` pada `PesananJastip`, `JastipFashion`, dan `JastipSkincare` |
-
-> **Catatan:** Fitur seperti status pesanan, struk, ringkasan, ID otomatis, dan perhitungan biaya berdasarkan berat tidak dimasukkan sebagai nilai tambah. Fitur tersebut merupakan pengembangan atau kreativitas fungsi pada program.
+| `Model` | Berisi class yang merepresentasikan data dan objek dalam sistem. |
+| `PesananJastip` | Superclass yang menyimpan data umum sebuah pesanan. |
+| `JastipFashion` | Subclass untuk pesanan kategori fashion. |
+| `JastipSkincare` | Subclass untuk pesanan kategori skincare. |
+| `Pelanggan` | Menyimpan data pelanggan. |
+| `Barang` | Menyimpan data barang yang dijastipkan. |
+| `Pembayaran` | Menyimpan informasi pembayaran dan total pembayaran. |
+| `Logic` | Berisi proses pengelolaan data pesanan. |
+| `KelolaPesanan` | Menangani proses tambah, tampil, cari, ubah, hapus, dan pengelolaan pesanan lainnya. |
+| `Helper` | Berisi class pendukung program. |
+| `ValidasiInput` | Menangani validasi input pengguna. |
+| `SistemJastip_Minpro2` | Menjalankan program, menampilkan menu, menerima input, dan mengatur alur program. |
 
 ---
 
-# ✨ Fitur Kreatif Program
+# 🔄 ALUR PROGRAM
 
-Fitur kreatif merupakan pengembangan fungsi yang dibuat agar program lebih sesuai dengan gambaran sistem jasa titip dalam penggunaan nyata.
+Program dijalankan melalui class `SistemJastip_Minpro2`.
 
-Fitur kreatif ini **berbeda dengan nilai tambah**. Fitur kreatif tidak digunakan untuk menggantikan penerapan MVC atau Polymorphism sebagai nilai tambah.
+Pada saat program dimulai, sistem membuat beberapa objek yang diperlukan, yaitu:
 
-## 1. ID Pesanan Otomatis
+- `Scanner` untuk menerima input dari pengguna.
+- `KelolaPesanan` untuk mengelola data pesanan.
+- `ValidasiInput` untuk melakukan validasi terhadap input.
 
-Program membuat ID pesanan secara otomatis berdasarkan jenis jastip.
+Ketika objek `KelolaPesanan` dibuat, sistem juga memasukkan **dummy data** ke dalam `ArrayList`. Dengan adanya data awal tersebut, pengguna dapat langsung mencoba menu yang berhubungan dengan data pesanan.
 
-Format yang digunakan:
+Setelah proses awal selesai, sistem menampilkan menu utama.
 
-- Fashion → `FSH-001`
-- Skincare → `SKN-001`
+Program menggunakan perulangan `do-while`, sehingga menu akan terus ditampilkan selama pengguna belum memilih menu **Keluar**.
 
-Dengan fitur ini, pengguna tidak perlu menentukan ID pesanan secara manual.
+### Alur utama program
 
-## 2. Status Pesanan
+1. Program dijalankan.
+2. Sistem membuat objek yang diperlukan.
+3. Dummy data dimasukkan ke dalam `ArrayList`.
+4. Menu utama ditampilkan.
+5. Pengguna memilih menu.
+6. Sistem menjalankan proses sesuai pilihan.
+7. Setelah proses selesai, sistem kembali ke menu utama.
+8. Proses berulang sampai pengguna memilih menu **Keluar**.
+9. Program selesai dan `Scanner` ditutup.
 
-Program menyediakan status untuk menggambarkan perkembangan pesanan:
+---
+
+# 📋 ALUR SETIAP MENU
+
+## 1. Tambah Pesanan
+
+Menu **Tambah Pesanan** digunakan untuk menambahkan data pesanan baru ke dalam sistem.
+
+### Alur:
+
+1. Pengguna memilih menu **Tambah Pesanan**.
+2. Sistem meminta pengguna memilih jenis jastip.
+3. Pilihan jenis jastip terdiri dari:
+   - Jastip Fashion
+   - Jastip Skincare
+4. Sistem membuat ID pesanan secara otomatis berdasarkan jenis jastip.
+5. Pengguna memasukkan data pelanggan.
+6. Pengguna memasukkan data barang.
+7. Pengguna memasukkan negara asal barang.
+8. Pengguna memasukkan harga barang.
+9. Pengguna memasukkan berat barang.
+10. Pengguna memasukkan jumlah barang.
+11. Sistem menghitung biaya jastip berdasarkan berat dan jumlah barang.
+12. Pengguna memilih metode pembayaran.
+13. Sistem menghitung total pembayaran.
+14. Jika memilih **Fashion**, pengguna memasukkan ukuran dan warna.
+15. Jika memilih **Skincare**, pengguna memasukkan jenis kulit dan ukuran produk.
+16. Sistem membuat objek sesuai jenis pesanan.
+17. Objek pesanan dimasukkan ke dalam `ArrayList`.
+18. Sistem menampilkan pesan bahwa pesanan berhasil dibuat.
+
+Pemilihan jenis pesanan pada proses ini berkaitan dengan penerapan **Inheritance**, karena objek yang dibuat dapat berupa `JastipFashion` atau `JastipSkincare`.
+
+---
+
+## 2. Lihat Pesanan
+
+Menu **Lihat Pesanan** digunakan untuk menampilkan seluruh data pesanan yang tersimpan.
+
+### Alur:
+
+1. Pengguna memilih menu **Lihat Pesanan**.
+2. Sistem memeriksa data dalam `ArrayList`.
+3. Jika belum ada data, sistem menampilkan pesan bahwa belum ada pesanan.
+4. Jika terdapat data, sistem melakukan perulangan untuk membaca setiap pesanan.
+5. Sistem memanggil method `tampilkanData()`.
+6. Data pesanan ditampilkan pada layar.
+
+Data yang ditampilkan meliputi:
+
+- ID pesanan
+- Nama pelanggan
+- Nomor telepon
+- Nama barang
+- Negara asal
+- Harga barang
+- Berat barang
+- Jumlah barang
+- Biaya jastip
+- Total pembayaran
+- Status pesanan
+- Data khusus sesuai jenis pesanan
+
+---
+
+## 3. Ubah Pesanan
+
+Menu **Ubah Pesanan** digunakan untuk memperbarui data pesanan yang telah tersimpan.
+
+### Alur:
+
+1. Pengguna memasukkan ID pesanan.
+2. Sistem mencari pesanan menggunakan method `cariPesanan()`.
+3. Jika ID tidak ditemukan, sistem menampilkan pesan **Pesanan tidak ditemukan**.
+4. Jika ID ditemukan, sistem meminta data baru.
+5. Data pelanggan diperbarui.
+6. Data barang diperbarui.
+7. Berat dan jumlah barang diperbarui.
+8. Sistem menghitung kembali biaya jastip.
+9. Sistem menghitung kembali total pembayaran.
+10. Data pesanan diperbarui melalui method `ubahPesanan()`.
+
+Dengan demikian, perubahan harga, berat, maupun jumlah barang akan memengaruhi perhitungan pembayaran.
+
+> **Catatan:** Data khusus subclass seperti ukuran/warna Fashion atau jenis kulit/ukuran produk Skincare tidak diubah pada menu ini karena method `ubahPesanan()` saat ini hanya memperbarui data umum pesanan.
+
+---
+
+## 4. Hapus Pesanan
+
+Menu **Hapus Pesanan** digunakan untuk menghapus data pesanan yang tersimpan.
+
+### Alur:
+
+1. Pengguna memasukkan ID pesanan.
+2. Sistem mencari pesanan berdasarkan ID.
+3. Jika data ditemukan, objek pesanan dihapus dari `ArrayList`.
+4. Sistem menampilkan pesan bahwa pesanan berhasil dihapus.
+5. Jika data tidak ditemukan, sistem menampilkan pesan bahwa pesanan tidak ditemukan.
+
+---
+
+## 5. Lihat Struk
+
+Menu **Lihat Struk** digunakan untuk menampilkan informasi transaksi dalam bentuk struk.
+
+### Alur:
+
+1. Pengguna memilih menu **Lihat Struk**.
+2. Pengguna memasukkan ID pesanan.
+3. Sistem mencari pesanan berdasarkan ID.
+4. Jika data ditemukan, sistem memanggil method `tampilkanStruk()`.
+5. Sistem menampilkan informasi transaksi.
+
+Informasi yang ditampilkan meliputi:
+
+- ID pesanan
+- Pelanggan
+- Barang
+- Negara asal
+- Harga barang
+- Berat
+- Jumlah
+- Biaya jastip
+- Metode pembayaran
+- Total pembayaran
+- Status pesanan
+
+---
+
+## 6. Ubah Status
+
+Menu **Ubah Status** digunakan untuk memperbarui perkembangan pesanan.
+
+Status yang tersedia adalah:
 
 1. Menunggu Pembayaran
 2. Pembayaran Berhasil
@@ -796,138 +252,454 @@ Program menyediakan status untuk menggambarkan perkembangan pesanan:
 4. Dalam Pengiriman
 5. Pesanan Selesai
 
-Fitur ini membuat sistem dapat menggambarkan perkembangan pesanan dari awal hingga selesai.
+### Alur:
 
-## 3. Perhitungan Biaya Jastip Berdasarkan Berat
+1. Pengguna memasukkan ID pesanan.
+2. Sistem mencari pesanan.
+3. Pengguna memilih status baru.
+4. Sistem mengubah status pesanan.
+5. Status baru dapat dilihat kembali melalui menu **Lihat Pesanan** maupun **Lihat Struk**.
 
-Berat barang digunakan secara langsung dalam perhitungan biaya jastip.
+Fitur ini menggambarkan tahapan sederhana proses pesanan jasa titip dari awal hingga selesai.
+
+---
+
+## 7. Ringkasan Pesanan
+
+Menu **Ringkasan Pesanan** digunakan untuk menampilkan informasi keseluruhan dari data pesanan yang tersimpan.
+
+Sistem menghitung:
+
+- Total seluruh pesanan.
+- Jumlah pesanan Fashion.
+- Jumlah pesanan Skincare.
+- Total berat barang.
+- Total pembayaran.
+
+Perhitungan dilakukan dengan membaca seluruh objek pesanan yang tersimpan di dalam `ArrayList`.
+
+Fitur ini memudahkan pengguna memperoleh gambaran keseluruhan data tanpa harus membaca setiap pesanan satu per satu.
+
+---
+
+## 8. Keluar
+
+Menu **Keluar** digunakan untuk mengakhiri program.
+
+### Alur:
+
+1. Pengguna memilih menu **Keluar**.
+2. Sistem menampilkan pesan bahwa program selesai.
+3. Perulangan menu berhenti.
+4. `Scanner` ditutup.
+5. Program berakhir.
+
+---
+
+# 🛠️ PENERAPAN KONSEP OOP
+
+## 1. Encapsulation
+
+**Encapsulation** diterapkan dengan membatasi akses langsung terhadap atribut yang dimiliki oleh suatu class.
+
+Pada program ini, atribut pada class seperti `Pelanggan`, `Barang`, `Pembayaran`, dan `PesananJastip` menggunakan access modifier `private`.
+
+Contoh:
+
+```java
+private String namaPelanggan;
+private String nomorTelepon;
+```
+
+Atribut tersebut tidak dapat diakses secara langsung dari class lain. Untuk membaca nilai atribut digunakan **getter**, sedangkan untuk mengubah nilai atribut digunakan **setter**.
+
+Contoh:
+
+```java
+public String getNamaPelanggan() {
+    return namaPelanggan;
+}
+
+public void setNamaPelanggan(String namaPelanggan) {
+    this.namaPelanggan = namaPelanggan;
+}
+```
+
+Dengan cara tersebut, data dalam objek menjadi lebih terkontrol karena akses terhadap atribut dilakukan melalui method yang telah disediakan oleh class.
+
+### Letak penerapan Encapsulation
+
+Encapsulation diterapkan pada:
+
+- `Pelanggan.java`
+- `Barang.java`
+- `Pembayaran.java`
+- `PesananJastip.java`
+- `JastipFashion.java`
+- `JastipSkincare.java`
+- `ValidasiInput.java`
+- `KelolaPesanan.java`
+
+---
+
+# 🌳 2. Inheritance
+
+**Inheritance** digunakan agar sebuah class dapat mewarisi atribut dan method dari class lain.
+
+Pada program ini:
+
+- `PesananJastip` berperan sebagai **superclass**.
+- `JastipFashion` berperan sebagai **subclass**.
+- `JastipSkincare` berperan sebagai **subclass**.
+
+SuperClass digunakan untuk menyimpan data yang bersifat umum dan dapat digunakan oleh berbagai jenis pesanan.
+
+Sedangkan subclass digunakan untuk menambahkan karakteristik khusus sesuai dengan jenis pesanan.
+
+### Superclass `PesananJastip`
+
+```java
+public class PesananJastip {
+```
+
+Class ini menyimpan data umum seperti:
+
+- ID pesanan
+- pelanggan
+- barang
+- jumlah
+- pembayaran
+- status pesanan
+
+### Subclass `JastipFashion`
+
+```java
+public class JastipFashion extends PesananJastip {
+```
+
+Subclass Fashion mewarisi data dari `PesananJastip` dan menambahkan atribut khusus:
+
+```java
+private String ukuran;
+private String warna;
+```
+
+### Subclass `JastipSkincare`
+
+```java
+public class JastipSkincare extends PesananJastip {
+```
+
+Subclass Skincare mewarisi data dari `PesananJastip` dan menambahkan atribut:
+
+```java
+private String jenisKulit;
+private int ukuranProduk;
+```
+
+Kata kunci `extends` menunjukkan hubungan inheritance antara subclass dan superclass.
+
+Constructor subclass juga menggunakan `super()` untuk memanggil constructor superclass.
+
+Contoh:
+
+```java
+super(
+    idPesanan,
+    pelanggan,
+    barang,
+    jumlah,
+    pembayaran,
+    statusPesanan
+);
+```
+
+Dengan penerapan tersebut, program memiliki **1 superclass dan 2 subclass**.
+
+---
+
+# 🔁 3. Polymorphism
+
+**Polymorphism** diterapkan melalui **method overriding**.
+
+Pada superclass `PesananJastip`, terdapat method:
+
+```java
+public void tampilkanData() {
+    ...
+}
+```
+
+Method tersebut kemudian dioverride oleh `JastipFashion`:
+
+```java
+@Override
+public void tampilkanData() {
+    super.tampilkanData();
+    System.out.println("Ukuran           : " + ukuran);
+    System.out.println("Warna            : " + warna);
+}
+```
+
+Method yang sama juga dioverride oleh `JastipSkincare`:
+
+```java
+@Override
+public void tampilkanData() {
+    super.tampilkanData();
+    System.out.println("Jenis Kulit      : " + jenisKulit);
+    System.out.println("Ukuran Produk    : " + ukuranProduk + " ml");
+}
+```
+
+Pada class `KelolaPesanan`, seluruh objek disimpan dalam:
+
+```java
+private ArrayList<PesananJastip> daftarPesanan;
+```
+
+Kemudian sistem memanggil:
+
+```java
+pesanan.tampilkanData();
+```
+
+Walaupun variabel menggunakan tipe `PesananJastip`, method yang dijalankan dapat menyesuaikan dengan jenis objek sebenarnya.
+
+Contohnya:
+
+- Objek `JastipFashion` akan menjalankan `tampilkanData()` milik `JastipFashion`.
+- Objek `JastipSkincare` akan menjalankan `tampilkanData()` milik `JastipSkincare`.
+
+Dengan demikian, penerapan overriding pada program menunjukkan penggunaan **Polymorphism**.
+
+---
+
+# ⭐ NILAI TAMBAH
+
+Nilai tambah pada project ini dibedakan dari fitur kreatif agar penerapannya sesuai dengan ketentuan tugas.
+
+## 1. Pendekatan MVC Sederhana
+
+Program menerapkan pemisahan struktur yang menggunakan pendekatan **MVC sederhana**.
+
+### Model
+
+Package `Model` berisi class yang merepresentasikan data dan objek program:
+
+- `PesananJastip`
+- `JastipFashion`
+- `JastipSkincare`
+- `Pelanggan`
+- `Barang`
+- `Pembayaran`
+
+Bagian ini berfokus pada representasi data yang digunakan dalam sistem.
+
+### Logic
+
+Package `Logic` berisi:
+
+```text
+KelolaPesanan.java
+```
+
+Class ini menangani proses pengelolaan data pesanan, seperti:
+
+- menambah pesanan
+- menampilkan pesanan
+- mencari pesanan
+- mengubah pesanan
+- menghapus pesanan
+- mengubah status
+- menampilkan struk
+- menampilkan ringkasan
+
+### Helper
+
+Package `Helper` berisi:
+
+```text
+ValidasiInput.java
+```
+
+Class ini digunakan untuk membantu proses validasi input pengguna.
+
+### Main
+
+Class:
+
+```text
+SistemJastip_Minpro2.java
+```
+
+digunakan untuk:
+
+- menjalankan program
+- menampilkan menu
+- menerima input pengguna
+- mengatur alur interaksi program
+
+Pembagian tersebut membuat setiap bagian program memiliki tanggung jawab yang lebih jelas.
+
+> **Catatan:** Penerapan MVC pada project ini merupakan **pendekatan MVC sederhana**, karena class `Main` masih menangani menu dan alur interaksi program.
+
+---
+
+## 2. Polymorphism
+
+Polymorphism menjadi salah satu nilai tambah karena program menerapkan **method overriding**.
+
+Method `tampilkanData()` pada superclass dioverride oleh:
+
+- `JastipFashion`
+- `JastipSkincare`
+
+Hal tersebut memungkinkan pemanggilan method yang sama menghasilkan tampilan tambahan yang berbeda sesuai dengan jenis objek pesanan.
+
+---
+
+# ✨ FITUR KREATIF / PENGEMBANGAN PROGRAM
+
+Selain ketentuan utama dan nilai tambah, program juga memiliki beberapa fitur kreatif yang dikembangkan untuk mendukung fungsi sistem.
+
+> **Catatan:** Fitur pada bagian ini merupakan pengembangan program dan **dibedakan dari nilai tambah** seperti MVC dan Polymorphism.
+
+## 1. Status Pesanan
+
+Program menyediakan beberapa status untuk menggambarkan perkembangan pesanan:
+
+- Menunggu Pembayaran
+- Pembayaran Berhasil
+- Sedang Dibeli
+- Dalam Pengiriman
+- Pesanan Selesai
+
+Fitur ini membuat sistem dapat mencatat perkembangan pesanan, bukan hanya menyimpan data transaksi.
+
+---
+
+## 2. Struk Pesanan
+
+Program menyediakan menu **Lihat Struk** yang menampilkan informasi transaksi dalam format yang lebih ringkas.
+
+Informasi yang ditampilkan meliputi:
+
+- pelanggan
+- barang
+- harga
+- berat
+- jumlah
+- biaya jastip
+- metode pembayaran
+- total pembayaran
+- status pesanan
+
+Fitur ini mempermudah pengguna melihat informasi penting dari satu transaksi.
+
+---
+
+## 3. Ringkasan Pesanan
+
+Program menyediakan menu **Ringkasan Pesanan** untuk menampilkan hasil perhitungan keseluruhan data.
+
+Ringkasan berisi:
+
+- total pesanan
+- jumlah Fashion
+- jumlah Skincare
+- total berat
+- total pembayaran
+
+Fitur ini membantu pengguna melihat kondisi keseluruhan data secara lebih cepat.
+
+---
+
+## 4. ID Pesanan Otomatis
+
+Program membuat ID pesanan secara otomatis berdasarkan jenis jastip.
+
+Contoh:
+
+```text
+FSH-001
+FSH-002
+SKN-001
+SKN-002
+```
+
+Keterangan:
+
+- `FSH` digunakan untuk kategori Fashion.
+- `SKN` digunakan untuk kategori Skincare.
+- Nomor dibuat secara berurutan dan diperiksa agar tidak menggunakan ID yang sudah tersedia.
+
+Dengan fitur ini, pengguna tidak perlu memasukkan ID pesanan secara manual.
+
+---
+
+## 5. Perhitungan Biaya Jastip Berdasarkan Berat
+
+Berat barang tidak hanya disimpan sebagai atribut, tetapi digunakan dalam proses perhitungan biaya jastip.
 
 Rumus yang digunakan:
 
 ```text
-Biaya Jastip = Berat Barang × Jumlah × Rp50.000
+Biaya Jastip = Berat × Jumlah × Rp50.000
 ```
 
-Sedangkan total pembayaran dihitung dengan:
+Total pembayaran dihitung dengan:
 
 ```text
 Total Pembayaran = Harga Barang × Jumlah + Biaya Jastip
 ```
 
-Dengan demikian, atribut `berat` memiliki fungsi nyata di dalam sistem dan ikut memengaruhi jumlah biaya yang harus dibayarkan.
-
-## 4. Struk Pesanan
-
-Program menyediakan menu **Lihat Struk** untuk menampilkan informasi transaksi secara lebih ringkas.
-
-Struk berisi informasi pelanggan, barang, berat, jumlah, biaya jastip, metode pembayaran, total pembayaran, dan status pesanan.
-
-Fitur ini dibuat agar pengguna dapat melihat informasi transaksi dalam bentuk yang lebih terstruktur.
-
-## 5. Ringkasan Pesanan
-
-Program menyediakan menu **Ringkasan Pesanan** untuk menampilkan informasi keseluruhan data.
-
-Ringkasan berisi:
-
-- Total pesanan
-- Total Fashion
-- Total Skincare
-- Total berat
-- Total pembayaran
-
-Fitur ini membantu pengguna melihat kondisi seluruh pesanan tanpa harus membaca setiap data satu per satu.
+Dengan demikian, atribut **berat barang memiliki fungsi nyata dalam sistem**, karena perubahan berat dan jumlah akan memengaruhi biaya jastip dan total pembayaran.
 
 ---
 
-# 🛡️ Input Validation
+# 📝 CRUD
 
-Input validation digunakan untuk memastikan data yang dimasukkan pengguna sesuai dengan ketentuan.
+CRUD merupakan operasi dasar untuk mengelola data.
 
-Validasi dibuat pada class:
+Pada program ini penerapan CRUD adalah:
 
-`ValidasiInput`
+| Operasi | Menu | Implementasi |
+|---|---|---|
+| **Create** | Menu 1 - Tambah Pesanan | Membuat dan menambahkan objek pesanan ke dalam `ArrayList`. |
+| **Read** | Menu 2 - Lihat Pesanan | Membaca dan menampilkan data pesanan dari `ArrayList`. |
+| **Update** | Menu 3 - Ubah Pesanan | Mengubah data pelanggan, barang, berat, jumlah, biaya jastip, dan total pembayaran. |
+| **Delete** | Menu 4 - Hapus Pesanan | Menghapus objek pesanan dari `ArrayList`. |
 
-Class tersebut memiliki tiga method utama:
+CRUD diterapkan melalui class `KelolaPesanan` dan dikendalikan melalui menu utama.
+
+---
+
+# 📦 ARRAYLIST
+
+Program menggunakan `ArrayList` untuk menyimpan kumpulan objek pesanan.
+
+Implementasinya terdapat pada class `KelolaPesanan`:
 
 ```java
-inputString()
-inputInteger()
-inputDouble()
+private ArrayList<PesananJastip> daftarPesanan;
 ```
 
-## `inputString()`
+`ArrayList` digunakan karena jumlah pesanan dapat bertambah maupun berkurang selama program berjalan.
 
-Digunakan untuk memvalidasi input berupa teks.
-
-Program akan memeriksa:
-
-- Input tidak boleh kosong.
-- Panjang input minimal sesuai ketentuan.
-- Panjang input maksimal sesuai ketentuan.
-
-## `inputInteger()`
-
-Digunakan untuk menerima input berupa bilangan bulat.
-
-Program akan memastikan:
-
-- Input yang diberikan berupa angka.
-- Nilai angka berada pada batas minimum dan maksimum.
-
-Contohnya digunakan pada input:
-
-- Pilihan menu
-- Jumlah barang
-- Pilihan metode pembayaran
-- Pilihan status
-- Ukuran produk skincare
-
-## `inputDouble()`
-
-Digunakan untuk menerima angka desimal.
-
-Method ini digunakan untuk data seperti:
-
-- Harga barang
-- Berat barang
-
-Program akan memastikan input berupa angka dan nilainya berada dalam batas yang telah ditentukan.
-
-Validasi input membantu mengurangi kesalahan ketika pengguna memasukkan data ke dalam program.
-
----
-
-# 📝 Penerapan CRUD
-
-CRUD merupakan proses pengelolaan data yang diterapkan dalam program.
-
-CRUD terdiri dari:
-
-- **Create**
-- **Read**
-- **Update**
-- **Delete**
-
-## Create
-
-Create diterapkan melalui menu:
-
-**Tambah Pesanan**
-
-Setelah objek pesanan dibuat, data dimasukkan ke dalam `ArrayList` menggunakan:
+### Menambahkan data
 
 ```java
 daftarPesanan.add(pesanan);
 ```
 
-## Read
+### Menghapus data
 
-Read diterapkan melalui menu:
+```java
+daftarPesanan.remove(pesanan);
+```
 
-**Lihat Pesanan**
-
-Program membaca seluruh data yang terdapat dalam `ArrayList`.
+### Menampilkan data
 
 ```java
 for (PesananJastip pesanan : daftarPesanan) {
@@ -935,179 +707,286 @@ for (PesananJastip pesanan : daftarPesanan) {
 }
 ```
 
-## Update
+Dengan menggunakan `ArrayList`, sistem dapat menyimpan beberapa objek pesanan dalam satu kumpulan data.
 
-Update diterapkan melalui menu:
+---
 
-**Ubah Pesanan**
+# 🛡️ VALIDASI INPUT
 
-Pengguna memasukkan ID pesanan, kemudian sistem mencari data tersebut dan memperbarui informasi:
+Program memiliki class `ValidasiInput` yang digunakan untuk memastikan input pengguna sesuai dengan batas yang telah ditentukan.
 
-- Pelanggan
-- Barang
-- Jumlah
-- Pembayaran
+## Validasi String
 
-## Delete
+Digunakan untuk memastikan:
 
-Delete diterapkan melalui menu:
+- input tidak kosong
+- panjang input tidak kurang dari batas minimum
+- panjang input tidak melebihi batas maksimum
 
-**Hapus Pesanan**
+## Validasi Integer
 
-Data yang ditemukan berdasarkan ID kemudian dihapus menggunakan:
+Digunakan untuk memastikan:
+
+- input berupa angka
+- nilai berada dalam rentang yang ditentukan
+
+## Validasi Double
+
+Digunakan untuk memastikan:
+
+- input berupa angka
+- nilai berada dalam rentang yang ditentukan
+
+Contoh:
 
 ```java
-daftarPesanan.remove(pesanan);
+input.inputInteger("Jumlah : ", 1, 100);
 ```
 
-Dengan adanya empat proses tersebut, program dapat melakukan pengelolaan data pesanan secara lengkap.
+Artinya jumlah barang harus berada antara **1 sampai 100**.
+
+Validasi tersebut membantu mengurangi kemungkinan pengguna memasukkan data yang tidak sesuai dengan kebutuhan program.
 
 ---
 
-# 📚 Daftar Class dan Fungsinya
+# 💾 DUMMY DATA
 
-| Class | Package | Fungsi |
-|---|---|---|
-| `PesananJastip` | Model | Superclass yang menyimpan data dan fungsi dasar pesanan |
-| `JastipFashion` | Model | Subclass untuk pesanan kategori Fashion |
-| `JastipSkincare` | Model | Subclass untuk pesanan kategori Skincare |
-| `Pelanggan` | Model | Menyimpan data pelanggan |
-| `Barang` | Model | Menyimpan data barang dan berat barang |
-| `Pembayaran` | Model | Menyimpan data pembayaran |
-| `KelolaPesanan` | Logic | Mengelola proses CRUD dan proses pesanan |
-| `ValidasiInput` | Helper | Melakukan validasi input pengguna |
-| `SistemJastip_Minpro2` | Main | Menjalankan program dan mengatur menu utama |
+Program menyediakan dummy data yang langsung dimasukkan ke dalam `ArrayList` ketika `KelolaPesanan` dibuat.
+
+Data awal terdiri dari:
+
+- satu pesanan **Jastip Fashion**
+- satu pesanan **Jastip Skincare**
+
+Contoh ID:
+
+```text
+FSH-001
+SKN-001
+```
+
+Dummy data digunakan agar ketika program pertama kali dijalankan, menu **Lihat Pesanan** sudah memiliki data yang dapat ditampilkan.
+
+Dengan adanya dummy data, pengguna dapat langsung mencoba beberapa fitur tanpa harus menambahkan pesanan terlebih dahulu, seperti:
+
+- Read
+- Lihat Struk
+- Ubah Pesanan
+- Ubah Status
+- Ringkasan
+- Hapus Pesanan
 
 ---
 
-# 📸 Dokumentasi Program
+# 🔐 ACCESS MODIFIER
+
+Program menerapkan access modifier `private` pada atribut class.
+
+Contoh pada class `Barang`:
+
+```java
+private String namaBarang;
+private String negaraAsal;
+private double harga;
+private double berat;
+```
+
+Penggunaan `private` membatasi akses langsung terhadap atribut dari luar class.
+
+Untuk mengakses data, program menggunakan method getter dan setter.
+
+Contoh:
+
+```java
+public double getHarga() {
+    return harga;
+}
+```
+
+Penerapan access modifier ini juga mendukung konsep **Encapsulation**.
+
+---
+
+# 🏗️ CONSTRUCTOR
+
+Constructor digunakan untuk memberikan nilai awal ketika sebuah objek dibuat.
+
+Contoh pada class `Barang`:
+
+```java
+public Barang(String namaBarang, String negaraAsal, double harga, double berat) {
+    this.namaBarang = namaBarang;
+    this.negaraAsal = negaraAsal;
+    this.harga = harga;
+    this.berat = berat;
+}
+```
+
+Constructor juga diterapkan pada class:
+
+- `Pelanggan`
+- `Barang`
+- `Pembayaran`
+- `PesananJastip`
+- `JastipFashion`
+- `JastipSkincare`
+- `ValidasiInput`
+- `KelolaPesanan`
+
+Dengan constructor, objek dapat langsung dibuat dengan data awal yang diperlukan.
+
+---
+
+# 📸 DOKUMENTASI PROGRAM
 
 ## 1. Tampilan Menu Utama
 
-**Screenshot:**
+> **Masukkan screenshot tampilan menu utama program di sini.**
 
-> Masukkan screenshot tampilan menu utama di sini.
+**Gambar 1. Tampilan Menu Utama Sistem Jasa Titip**
 
-**Penjelasan:**
-
-Tampilan ini menunjukkan menu utama **Sistem Jasa Titip Luar Negeri**. Pengguna dapat memilih berbagai proses yang tersedia, mulai dari menambah, melihat, mengubah, dan menghapus pesanan hingga melihat struk, mengubah status, melihat ringkasan, dan keluar dari program.
+Screenshot menunjukkan menu utama yang menyediakan seluruh pilihan proses dalam sistem, mulai dari menambahkan pesanan hingga mengakhiri program.
 
 ---
 
 ## 2. Tambah Pesanan
 
-**Screenshot:**
+> **Masukkan screenshot proses tambah pesanan di sini.**
 
-> Masukkan screenshot proses Tambah Pesanan di sini.
+**Gambar 2. Proses Penambahan Pesanan**
 
-**Penjelasan:**
-
-Tampilan ini menunjukkan proses penambahan pesanan baru. Pengguna memilih jenis jastip, kemudian memasukkan data pelanggan, barang, berat, jumlah, dan metode pembayaran. Sistem membuat ID secara otomatis dan menghitung biaya jastip berdasarkan berat barang.
+Screenshot menunjukkan proses pengguna memilih jenis jastip dan memasukkan data pelanggan, barang, berat, jumlah, serta informasi pembayaran.
 
 ---
 
 ## 3. Lihat Pesanan
 
-**Screenshot:**
+> **Masukkan screenshot hasil menu lihat pesanan di sini.**
 
-> Masukkan screenshot hasil Lihat Pesanan di sini.
+**Gambar 3. Tampilan Data Pesanan**
 
-**Penjelasan:**
-
-Tampilan ini menunjukkan seluruh data pesanan yang tersimpan dalam `ArrayList`. Data yang ditampilkan menyesuaikan jenis pesanan. Jastip Fashion menampilkan ukuran dan warna, sedangkan Jastip Skincare menampilkan jenis kulit dan ukuran produk.
+Screenshot menunjukkan data pesanan yang telah tersimpan dalam `ArrayList` dan ditampilkan oleh sistem.
 
 ---
 
 ## 4. Ubah Pesanan
 
-**Screenshot:**
+> **Masukkan screenshot proses ubah pesanan di sini.**
 
-> Masukkan screenshot proses Ubah Pesanan di sini.
+**Gambar 4. Proses Perubahan Data Pesanan**
 
-**Penjelasan:**
-
-Tampilan ini menunjukkan proses perubahan data pesanan berdasarkan ID. Pengguna dapat mengubah informasi pelanggan, barang, berat, jumlah, dan data pembayaran. Setelah perubahan dilakukan, biaya jastip dan total pembayaran dihitung kembali.
+Screenshot menunjukkan proses pencarian pesanan berdasarkan ID dan perubahan data pesanan yang telah tersimpan.
 
 ---
 
 ## 5. Hapus Pesanan
 
-**Screenshot:**
+> **Masukkan screenshot proses hapus pesanan di sini.**
 
-> Masukkan screenshot proses Hapus Pesanan di sini.
+**Gambar 5. Proses Penghapusan Data Pesanan**
 
-**Penjelasan:**
-
-Tampilan ini menunjukkan proses penghapusan data pesanan berdasarkan ID. Jika ID ditemukan, data akan dihapus dari daftar pesanan.
+Screenshot menunjukkan proses penghapusan pesanan berdasarkan ID yang dimasukkan pengguna.
 
 ---
 
 ## 6. Lihat Struk
 
-**Screenshot:**
+> **Masukkan screenshot struk pesanan di sini.**
 
-> Masukkan screenshot hasil Lihat Struk di sini.
+**Gambar 6. Tampilan Struk Pesanan**
 
-**Penjelasan:**
-
-Tampilan ini menunjukkan informasi pesanan dalam bentuk struk sederhana. Informasi yang ditampilkan meliputi pelanggan, barang, harga, berat, jumlah, biaya jastip, metode pembayaran, total pembayaran, dan status.
+Screenshot menunjukkan informasi transaksi dalam bentuk struk, meliputi data pelanggan, barang, biaya jastip, metode pembayaran, total pembayaran, dan status pesanan.
 
 ---
 
 ## 7. Ubah Status
 
-**Screenshot:**
+> **Masukkan screenshot menu ubah status di sini.**
 
-> Masukkan screenshot menu Ubah Status di sini.
+**Gambar 7. Proses Perubahan Status Pesanan**
 
-**Penjelasan:**
-
-Tampilan ini menunjukkan pilihan status yang dapat digunakan untuk memperbarui perkembangan pesanan. Status dapat diubah mulai dari menunggu pembayaran hingga pesanan selesai.
+Screenshot menunjukkan pilihan status yang tersedia untuk memperbarui perkembangan pesanan.
 
 ---
 
 ## 8. Ringkasan Pesanan
 
-**Screenshot:**
+> **Masukkan screenshot ringkasan pesanan di sini.**
 
-> Masukkan screenshot hasil Ringkasan Pesanan di sini.
+**Gambar 8. Tampilan Ringkasan Pesanan**
 
-**Penjelasan:**
-
-Tampilan ini menunjukkan ringkasan keseluruhan pesanan yang terdiri dari jumlah pesanan, jumlah berdasarkan kategori, total berat barang, dan total pembayaran.
+Screenshot menunjukkan hasil perhitungan keseluruhan data pesanan, seperti total pesanan, jumlah kategori, total berat, dan total pembayaran.
 
 ---
 
-# 📊 Ringkasan Penerapan Program
+# 📚 RANGKUMAN PENERAPAN KONSEP
 
-| Bagian | Penerapan |
+| Konsep | Penerapan dalam Program |
 |---|---|
-| CRUD | Tambah, lihat, ubah, dan hapus pesanan |
-| Constructor | Digunakan untuk membuat dan memberikan nilai awal objek |
-| ArrayList | Menyimpan daftar objek pesanan |
-| Access Modifier | `private` pada atribut dan `public` pada method/constructor yang diperlukan |
-| Encapsulation | Getter dan setter digunakan untuk mengakses data |
-| Inheritance | `PesananJastip` sebagai superclass dan dua subclass |
-| Superclass | `PesananJastip` |
-| Subclass | `JastipFashion` dan `JastipSkincare` |
-| Input Validation | Class `ValidasiInput` |
-| Dummy Data | Data Fashion dan Skincare dimasukkan sejak awal |
-| Nilai Tambah - MVC | Pemisahan Model, Logic, Helper, dan Main |
-| Nilai Tambah - Polymorphism | Overriding `tampilkanData()` |
-| Fitur Kreatif | ID otomatis, status pesanan, biaya berdasarkan berat, struk, dan ringkasan |
+| **Class & Object** | Data dan proses program direpresentasikan menggunakan class dan object. |
+| **Constructor** | Digunakan untuk menginisialisasi object ketika dibuat. |
+| **Access Modifier** | Atribut menggunakan `private` untuk membatasi akses langsung. |
+| **Encapsulation** | Getter dan setter digunakan untuk mengakses serta mengubah atribut. |
+| **Inheritance** | `JastipFashion` dan `JastipSkincare` mewarisi `PesananJastip`. |
+| **Superclass** | `PesananJastip` menjadi class induk. |
+| **Subclass** | `JastipFashion` dan `JastipSkincare` menjadi class turunan. |
+| **`extends`** | Digunakan untuk menerapkan hubungan inheritance. |
+| **`super()`** | Digunakan untuk memanggil constructor superclass. |
+| **`@Override`** | Digunakan pada method `tampilkanData()` di subclass. |
+| **Polymorphism** | Pemanggilan `tampilkanData()` dapat menjalankan versi sesuai objek subclass. |
+| **ArrayList** | Digunakan untuk menyimpan kumpulan pesanan. |
+| **CRUD** | Digunakan untuk menambah, melihat, mengubah, dan menghapus data. |
+| **Validasi Input** | Digunakan untuk memastikan input sesuai tipe dan batas yang ditentukan. |
+| **Dummy Data** | Dua data awal disediakan agar program dapat langsung diuji. |
+| **MVC Sederhana** | Program dipisahkan menjadi Model, Logic, Helper, dan Main berdasarkan tanggung jawab. |
 
 ---
 
-# 🏁 Penutup
+# ⭐ PEMISAHAN FITUR PROGRAM
 
-Program **Sistem Jasa Titip Luar Negeri** dibuat sebagai penerapan konsep Pemrograman Berorientasi Objek menggunakan Java.
+Agar penerapan dalam project dapat dibedakan dengan jelas, fitur program dikelompokkan menjadi tiga bagian.
 
-Program telah menerapkan konsep utama yang dibutuhkan, yaitu **CRUD, constructor, ArrayList, access modifier, encapsulation, inheritance, superclass dan subclass, input validation, serta dummy data**.
+## 📌 Ketentuan/Konsep Utama
 
-Pada penerapan inheritance, `PesananJastip` digunakan sebagai superclass, sedangkan `JastipFashion` dan `JastipSkincare` digunakan sebagai subclass. Perbedaan karakteristik kedua jenis pesanan juga ditunjukkan melalui method overriding sebagai penerapan **polymorphism**.
+Bagian ini merupakan konsep dan ketentuan yang diterapkan dalam project:
 
-Selain konsep utama tersebut, program menerapkan **MVC sederhana dan Polymorphism sebagai nilai tambah**.
+- CRUD
+- Constructor
+- ArrayList
+- Access Modifier
+- Encapsulation
+- Inheritance
+- 1 Superclass dan 2 Subclass
+- Input Validation
+- Dummy Data
 
-Program juga dikembangkan dengan beberapa **fitur kreatif**, yaitu ID pesanan otomatis, status pesanan, perhitungan biaya jastip berdasarkan berat barang, struk pesanan, dan ringkasan pesanan.
+## ⭐ Nilai Tambah
 
-Dengan adanya pembagian antara **ketentuan utama, nilai tambah, dan fitur kreatif**, setiap bagian dalam program dapat dijelaskan sesuai dengan fungsi dan tujuan masing-masing tanpa mencampurkan konsep nilai tambah dengan fitur kreativitas program.
+Nilai tambah yang diterapkan pada project:
+
+- Pendekatan MVC sederhana
+- Polymorphism
+
+## ✨ Fitur Kreatif/Pengembangan
+
+Fitur tambahan yang dikembangkan dalam program:
+
+- Status Pesanan
+- Struk Pesanan
+- Ringkasan Pesanan
+- ID Pesanan Otomatis
+- Perhitungan Biaya Jastip Berdasarkan Berat
+
+Pembagian tersebut dibuat agar konsep wajib, nilai tambah, dan fitur kreatif tidak tercampur sehingga penerapan masing-masing dapat terlihat dengan jelas.
+
+---
+
+# PENUTUP
+
+Program **Sistem Jasa Titip Luar Negeri** merupakan penerapan konsep **Object-Oriented Programming (OOP)** dalam studi kasus pengelolaan jasa titip.
+
+Program menerapkan konsep utama seperti **Encapsulation, Inheritance, Constructor, ArrayList, Access Modifier, CRUD, Input Validation, dan Dummy Data**.
+
+Selain konsep utama tersebut, program menerapkan **nilai tambah berupa pendekatan MVC sederhana dan Polymorphism**. Program juga dikembangkan dengan beberapa fitur kreatif seperti **Status Pesanan, Struk Pesanan, Ringkasan Pesanan, ID Pesanan Otomatis, serta Perhitungan Biaya Jastip Berdasarkan Berat Barang**.
+
+Dengan adanya pembagian tersebut, program tidak hanya menerapkan konsep OOP yang dibutuhkan dalam Mini Project 2, tetapi juga memiliki pengembangan fitur yang mendukung proses pengelolaan data jasa titip secara lebih terstruktur.
