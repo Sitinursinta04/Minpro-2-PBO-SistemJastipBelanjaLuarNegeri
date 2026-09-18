@@ -702,7 +702,6 @@ Validasi input digunakan untuk memastikan data yang dimasukkan pengguna sesuai d
 | `SistemJastip_Minpro2` | `Main` | Menjalankan program dan menu utama |
 
 ---
-
 ## ✨ Penutup
 
 Program **Sistem Jasa Titip Luar Negeri** dibuat sebagai implementasi konsep Pemrograman Berorientasi Objek dalam bentuk sistem pengelolaan pesanan.
