@@ -1,6 +1,6 @@
 # 🛍️ SISTEM JASA TITIP BELANJA LUAR NEGERI
 
-# 📖 DESKRIPSI SINGKAT PROGRAM
+## 📖 DESKRIPSI SINGKAT PROGRAM
 
 **Sistem Jasa Titip Belanja Luar Negeri** merupakan program berbasis Java yang digunakan untuk membantu mengelola data pesanan jasa titip dari luar negeri.
 
@@ -32,7 +32,7 @@ Selain menerapkan konsep yang diwajibkan pada Mini Project 2, program juga dikem
 
 ---
 
-# 🎯 TUJUAN PROGRAM
+## 🎯 TUJUAN PROGRAM
 
 Program ini dibuat sebagai penerapan konsep **Pemrograman Berorientasi Objek (PBO)** dalam studi kasus jasa titip belanja luar negeri.
 
@@ -49,7 +49,7 @@ Tujuan program adalah:
 
 ---
 
-# 🧩 STRUKTUR PROGRAM
+## 🧩 STRUKTUR PROGRAM
 
 Program dibagi menjadi beberapa package agar setiap class memiliki fungsi dan tanggung jawab yang lebih terorganisir.
 
@@ -74,7 +74,7 @@ SistemJastip_Minpro2
     └── SistemJastip_Minpro2.java
 ```
 
-## Penjelasan Struktur
+### Penjelasan Struktur
 
 | Package/Class | Fungsi |
 |---|---|
@@ -93,7 +93,7 @@ SistemJastip_Minpro2
 
 ---
 
-# 🔄 ALUR PROGRAM
+## 🔄 ALUR PROGRAM
 
 Program dijalankan melalui class `SistemJastip_Minpro2`.
 
@@ -109,7 +109,7 @@ Setelah proses awal selesai, sistem menampilkan menu utama.
 
 Program menggunakan perulangan `do-while`, sehingga menu akan terus ditampilkan selama pengguna belum memilih menu **Keluar**.
 
-## Alur Utama Program
+### Alur Utama Program
 
 ```text
 Program Dimulai
@@ -148,9 +148,9 @@ ke Menu
 
 ---
 
-# 📋 ALUR SETIAP MENU
+## 📋 ALUR SETIAP MENU
 
-## 1. Tambah Pesanan
+### 1. Tambah Pesanan
 
 Menu **Tambah Pesanan** digunakan untuk menambahkan data pesanan baru ke dalam sistem.
 
@@ -181,7 +181,7 @@ Pemilihan jenis pesanan pada proses ini berkaitan dengan penerapan **Inheritance
 
 ---
 
-## 2. Lihat Pesanan
+### 2. Lihat Pesanan
 
 Menu **Lihat Pesanan** digunakan untuk menampilkan seluruh data pesanan yang tersimpan.
 
@@ -211,7 +211,7 @@ Menu **Lihat Pesanan** digunakan untuk menampilkan seluruh data pesanan yang ter
 
 ---
 
-## 3. Ubah Pesanan
+### 3. Ubah Pesanan
 
 Menu **Ubah Pesanan** digunakan untuk memperbarui data pesanan yang telah tersimpan.
 
@@ -234,7 +234,7 @@ Dengan demikian, perubahan harga, berat, maupun jumlah barang akan memengaruhi p
 
 ---
 
-## 4. Hapus Pesanan
+### 4. Hapus Pesanan
 
 Menu **Hapus Pesanan** digunakan untuk menghapus data pesanan yang tersimpan.
 
@@ -248,7 +248,7 @@ Menu **Hapus Pesanan** digunakan untuk menghapus data pesanan yang tersimpan.
 
 ---
 
-## 5. Lihat Struk
+### 5. Lihat Struk
 
 Menu **Lihat Struk** digunakan untuk menampilkan informasi transaksi dalam bentuk struk.
 
@@ -276,7 +276,7 @@ Menu **Lihat Struk** digunakan untuk menampilkan informasi transaksi dalam bentu
 
 ---
 
-## 6. Ubah Status
+### 6. Ubah Status
 
 Menu **Ubah Status** digunakan untuk memperbarui perkembangan pesanan.
 
@@ -300,7 +300,7 @@ Fitur ini menggambarkan tahapan sederhana proses pesanan jasa titip dari awal hi
 
 ---
 
-## 7. Ringkasan Pesanan
+### 7. Ringkasan Pesanan
 
 Menu **Ringkasan Pesanan** digunakan untuk menampilkan informasi keseluruhan dari data pesanan yang tersimpan.
 
@@ -318,7 +318,7 @@ Fitur ini memudahkan pengguna memperoleh gambaran keseluruhan data tanpa harus m
 
 ---
 
-## 8. Keluar
+### 8. Keluar
 
 Menu **Keluar** digunakan untuk mengakhiri program.
 
@@ -332,7 +332,7 @@ Menu **Keluar** digunakan untuk mengakhiri program.
 
 ---
 
-# 🛠️ PENERAPAN KONSEP OOP
+## 🛠️ PENERAPAN KONSEP PBO
 
 ## 1. Encapsulation
 
@@ -378,7 +378,7 @@ Encapsulation diterapkan pada:
 
 ---
 
-# 🌳 2. Inheritance
+## 🌳 2. Inheritance
 
 **Inheritance** digunakan agar sebuah class dapat mewarisi atribut dan method dari class lain.
 
@@ -466,7 +466,7 @@ Dengan penerapan tersebut, program memiliki **1 superclass dan 2 subclass**.
 
 ---
 
-# 🔁 3. Polymorphism
+## 🔁 3. Polymorphism
 
 **Polymorphism** diterapkan melalui **method overriding**.
 
@@ -523,11 +523,11 @@ Dengan demikian, penerapan overriding pada program menunjukkan penggunaan **Poly
 
 ---
 
-# ⭐ NILAI TAMBAH
+## ⭐ NILAI TAMBAH
 
 Nilai tambah pada project ini dibedakan dari fitur kreatif agar penerapannya sesuai dengan ketentuan tugas.
 
-## 1. Pendekatan MVC Sederhana
+### 1. Pendekatan MVC Sederhana
 
 Program menerapkan pemisahan struktur dengan menggunakan pendekatan **MVC sederhana**.
 
@@ -594,7 +594,7 @@ Pembagian tersebut membuat setiap bagian program memiliki tanggung jawab yang le
 
 ---
 
-## 2. Polymorphism
+### 2. Polymorphism
 
 Polymorphism menjadi salah satu nilai tambah karena program menerapkan **method overriding**.
 
@@ -613,7 +613,7 @@ Selain ketentuan utama dan nilai tambah, program juga memiliki beberapa fitur kr
 
 > **Catatan:** Fitur pada bagian ini merupakan pengembangan program dan **dibedakan dari nilai tambah** seperti MVC dan Polymorphism.
 
-## 1. Status Pesanan
+### 1. Status Pesanan
 
 Program menyediakan beberapa status untuk menggambarkan perkembangan pesanan:
 
@@ -627,7 +627,7 @@ Fitur ini membuat sistem dapat mencatat perkembangan pesanan, bukan hanya menyim
 
 ---
 
-## 2. Struk Pesanan
+### 2. Struk Pesanan
 
 Program menyediakan menu **Lihat Struk** yang menampilkan informasi transaksi dalam format yang lebih ringkas.
 
@@ -647,7 +647,7 @@ Fitur ini mempermudah pengguna melihat informasi penting dari satu transaksi.
 
 ---
 
-## 3. Ringkasan Pesanan
+### 3. Ringkasan Pesanan
 
 Program menyediakan menu **Ringkasan Pesanan** untuk menampilkan hasil perhitungan keseluruhan data.
 
@@ -663,7 +663,7 @@ Fitur ini membantu pengguna melihat kondisi keseluruhan data secara lebih cepat.
 
 ---
 
-## 4. ID Pesanan Otomatis
+### 4. ID Pesanan Otomatis
 
 Program membuat ID pesanan secara otomatis berdasarkan jenis jastip.
 
@@ -686,7 +686,7 @@ Dengan fitur ini, pengguna tidak perlu memasukkan ID pesanan secara manual.
 
 ---
 
-## 5. Perhitungan Biaya Jastip Berdasarkan Berat
+### 5. Perhitungan Biaya Jastip Berdasarkan Berat
 
 Berat barang tidak hanya disimpan sebagai atribut, tetapi digunakan dalam proses perhitungan biaya jastip.
 
@@ -706,7 +706,7 @@ Dengan demikian, atribut **berat barang memiliki fungsi nyata dalam sistem**, ka
 
 ---
 
-# 📝 CRUD
+## 📝 CRUD
 
 CRUD merupakan operasi dasar untuk mengelola data.
 
@@ -723,7 +723,7 @@ CRUD diterapkan melalui class `KelolaPesanan` dan dikendalikan melalui menu utam
 
 ---
 
-# 📦 ARRAYLIST
+## 📦 ARRAYLIST
 
 Program menggunakan `ArrayList` untuk menyimpan kumpulan objek pesanan.
 
@@ -759,11 +759,11 @@ Dengan menggunakan `ArrayList`, sistem dapat menyimpan beberapa objek pesanan da
 
 ---
 
-# 🛡️ VALIDASI INPUT
+## 🛡️ VALIDASI INPUT
 
 Program memiliki class `ValidasiInput` yang digunakan untuk memastikan input pengguna sesuai dengan batas yang telah ditentukan.
 
-## Validasi String
+### Validasi String
 
 Digunakan untuk memastikan:
 
@@ -771,14 +771,14 @@ Digunakan untuk memastikan:
 - Panjang input tidak kurang dari batas minimum.
 - Panjang input tidak melebihi batas maksimum.
 
-## Validasi Integer
+### Validasi Integer
 
 Digunakan untuk memastikan:
 
 - Input berupa angka.
 - Nilai berada dalam rentang yang ditentukan.
 
-## Validasi Double
+### Validasi Double
 
 Digunakan untuk memastikan:
 
@@ -797,7 +797,7 @@ Validasi tersebut membantu mengurangi kemungkinan pengguna memasukkan data yang 
 
 ---
 
-# 💾 DUMMY DATA
+## 💾 DUMMY DATA
 
 Program menyediakan dummy data yang langsung dimasukkan ke dalam `ArrayList` ketika `KelolaPesanan` dibuat.
 
@@ -826,7 +826,7 @@ Dengan adanya dummy data, pengguna dapat langsung mencoba beberapa fitur tanpa h
 
 ---
 
-# 🔐 ACCESS MODIFIER
+## 🔐 ACCESS MODIFIER
 
 Program menerapkan access modifier `private` pada atribut class.
 
@@ -855,7 +855,7 @@ Penerapan access modifier ini juga mendukung konsep **Encapsulation**.
 
 ---
 
-# 🏗️ CONSTRUCTOR
+## 🏗️ CONSTRUCTOR
 
 Constructor digunakan untuk memberikan nilai awal ketika sebuah objek dibuat.
 
@@ -885,13 +885,13 @@ Dengan constructor, objek dapat langsung dibuat dengan data awal yang diperlukan
 
 ---
 
-# 📸 DOKUMENTASI PROGRAM
+## 📸 DOKUMENTASI PROGRAM
 
 Dokumentasi berikut digunakan untuk menunjukkan hasil implementasi dan pengujian program.
 
 > **Catatan:** Ganti bagian `[Masukkan Screenshot]` dengan screenshot asli dari program sebelum README dikumpulkan.
 
-## 1. Tampilan Menu Utama
+### 1. Tampilan Menu Utama
 
 **[Masukkan Screenshot Menu Utama di sini]**
 
@@ -901,7 +901,7 @@ Screenshot menunjukkan menu utama yang menyediakan seluruh pilihan proses dalam 
 
 ---
 
-## 2. Tambah Pesanan
+### 2. Tambah Pesanan
 
 **[Masukkan Screenshot Proses Tambah Pesanan di sini]**
 
@@ -911,7 +911,7 @@ Screenshot menunjukkan proses pengguna memilih jenis jastip dan memasukkan data 
 
 ---
 
-## 3. Lihat Pesanan
+### 3. Lihat Pesanan
 
 **[Masukkan Screenshot Hasil Lihat Pesanan di sini]**
 
@@ -921,7 +921,7 @@ Screenshot menunjukkan data pesanan yang telah tersimpan dalam `ArrayList` dan d
 
 ---
 
-## 4. Ubah Pesanan
+### 4. Ubah Pesanan
 
 **[Masukkan Screenshot Proses Ubah Pesanan di sini]**
 
@@ -931,7 +931,7 @@ Screenshot menunjukkan proses pencarian pesanan berdasarkan ID dan perubahan dat
 
 ---
 
-## 5. Hapus Pesanan
+### 5. Hapus Pesanan
 
 **[Masukkan Screenshot Proses Hapus Pesanan di sini]**
 
@@ -941,7 +941,7 @@ Screenshot menunjukkan proses penghapusan pesanan berdasarkan ID yang dimasukkan
 
 ---
 
-## 6. Lihat Struk
+### 6. Lihat Struk
 
 **[Masukkan Screenshot Struk Pesanan di sini]**
 
@@ -951,7 +951,7 @@ Screenshot menunjukkan informasi transaksi dalam bentuk struk, meliputi data pel
 
 ---
 
-## 7. Ubah Status
+### 7. Ubah Status
 
 **[Masukkan Screenshot Menu Ubah Status di sini]**
 
@@ -961,7 +961,7 @@ Screenshot menunjukkan pilihan status yang tersedia untuk memperbarui perkembang
 
 ---
 
-## 8. Ringkasan Pesanan
+### 8. Ringkasan Pesanan
 
 **[Masukkan Screenshot Ringkasan Pesanan di sini]**
 
@@ -971,7 +971,7 @@ Screenshot menunjukkan hasil perhitungan keseluruhan data pesanan, seperti total
 
 ---
 
-# 📚 RANGKUMAN PENERAPAN KONSEP
+## 📚 RANGKUMAN PENERAPAN KONSEP
 
 | Konsep | Penerapan dalam Program |
 |---|---|
@@ -991,48 +991,6 @@ Screenshot menunjukkan hasil perhitungan keseluruhan data pesanan, seperti total
 | **Validasi Input** | Digunakan untuk memastikan input sesuai tipe dan batas yang ditentukan. |
 | **Dummy Data** | Dua data awal disediakan agar program dapat langsung diuji. |
 | **MVC Sederhana** | Program dipisahkan menjadi Model, Logic, Helper, dan Main berdasarkan tanggung jawab. |
-
----
-
-# 📌 PERBEDAAN KETENTUAN UTAMA DAN NILAI TAMBAH
-
-Agar penerapan program lebih mudah dipahami, konsep dan fitur program dibedakan menjadi tiga bagian.
-
-## 1. Ketentuan Utama
-
-Konsep yang menjadi bagian utama penerapan PBO dan pengelolaan program:
-
-- Class dan Object
-- Constructor
-- Access Modifier
-- Encapsulation
-- Inheritance
-- Superclass dan Subclass
-- `extends`
-- `super()`
-- ArrayList
-- CRUD
-- Input Validation
-- Dummy Data
-
-## 2. Nilai Tambah
-
-Nilai tambah yang diterapkan dalam project:
-
-- **Pendekatan MVC sederhana**
-- **Polymorphism**
-
-## 3. Fitur Kreatif / Pengembangan
-
-Fitur tambahan yang dikembangkan untuk mendukung fungsi sistem:
-
-- Status Pesanan
-- Struk Pesanan
-- Ringkasan Pesanan
-- ID Pesanan Otomatis
-- Perhitungan Biaya Jastip Berdasarkan Berat
-
-Dengan pemisahan tersebut, penerapan konsep utama, nilai tambah, dan fitur pengembangan dapat terlihat dengan lebih jelas.
 
 ---
 
