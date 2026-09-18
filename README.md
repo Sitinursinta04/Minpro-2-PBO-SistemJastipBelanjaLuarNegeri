@@ -942,45 +942,6 @@ Screenshot menunjukkan hasil perhitungan keseluruhan data pesanan, seperti total
 
 ---
 
-# ⭐ PEMISAHAN FITUR PROGRAM
-
-Agar penerapan dalam project dapat dibedakan dengan jelas, fitur program dikelompokkan menjadi tiga bagian.
-
-## 📌 Ketentuan/Konsep Utama
-
-Bagian ini merupakan konsep dan ketentuan yang diterapkan dalam project:
-
-- CRUD
-- Constructor
-- ArrayList
-- Access Modifier
-- Encapsulation
-- Inheritance
-- 1 Superclass dan 2 Subclass
-- Input Validation
-- Dummy Data
-
-## ⭐ Nilai Tambah
-
-Nilai tambah yang diterapkan pada project:
-
-- Pendekatan MVC sederhana
-- Polymorphism
-
-## ✨ Fitur Kreatif/Pengembangan
-
-Fitur tambahan yang dikembangkan dalam program:
-
-- Status Pesanan
-- Struk Pesanan
-- Ringkasan Pesanan
-- ID Pesanan Otomatis
-- Perhitungan Biaya Jastip Berdasarkan Berat
-
-Pembagian tersebut dibuat agar konsep wajib, nilai tambah, dan fitur kreatif tidak tercampur sehingga penerapan masing-masing dapat terlihat dengan jelas.
-
----
-
 # PENUTUP
 
 Program **Sistem Jasa Titip Luar Negeri** merupakan penerapan konsep **Object-Oriented Programming (OOP)** dalam studi kasus pengelolaan jasa titip.
