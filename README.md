@@ -934,12 +934,12 @@ Screenshot menunjukkan hasil perhitungan keseluruhan data pesanan, seperti total
 
 ## PENUTUP
 
-Program Sistem Jasa Titip Belanja Luar Negeri merupakan penerapan konsep Object-Oriented Programming (OOP) dalam studi kasus pengelolaan jasa titip.
+- Program Sistem Jasa Titip Belanja Luar Negeri merupakan penerapan konsep Object-Oriented Programming (OOP) dalam studi kasus pengelolaan jasa titip.
 
-Program menerapkan konsep utama seperti Encapsulation, Inheritance, Constructor, ArrayList, Access Modifier, CRUD, Input Validation, dan Dummy Data.
+- Program menerapkan konsep utama seperti Encapsulation, Inheritance, Constructor, ArrayList, Access Modifier, CRUD, Input Validation, dan Dummy Data.
 
-Selain konsep utama tersebut, program menerapkan nilai tambah berupa pendekatan MVC sederhana dan Polymorphism.
+- Selain konsep utama tersebut, program menerapkan nilai tambah berupa pendekatan MVC sederhana dan Polymorphism.
 
-Program juga dikembangkan dengan beberapa fitur kreatif seperti Status Pesanan, Struk Pesanan, Ringkasan Pesanan, ID Pesanan Otomatis, serta Perhitungan Biaya Jastip Berdasarkan Berat Barang.
+- Program juga dikembangkan dengan beberapa fitur kreatif seperti Status Pesanan, Struk Pesanan, Ringkasan Pesanan, ID Pesanan Otomatis, serta Perhitungan Biaya Jastip Berdasarkan Berat Barang.
 
-Dengan adanya pembagian tersebut, program tidak hanya menerapkan konsep OOP yang dibutuhkan dalam Mini Project 2, tetapi juga memiliki pengembangan fitur yang mendukung proses pengelolaan data jasa titip secara lebih terstruktur.
+- Dengan adanya pembagian tersebut, program tidak hanya menerapkan konsep OOP yang dibutuhkan dalam Mini Project 2, tetapi juga memiliki pengembangan fitur yang mendukung proses pengelolaan data jasa titip secara lebih terstruktur.
