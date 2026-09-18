@@ -53,25 +53,7 @@ Tujuan program adalah:
 
 Program dibagi menjadi beberapa package agar setiap class memiliki fungsi dan tanggung jawab yang lebih terorganisir.
 
-```text
-SistemJastip_Minpro2
-│
-├── Model
-│   ├── PesananJastip.java
-│   ├── JastipFashion.java
-│   ├── JastipSkincare.java
-│   ├── Pelanggan.java
-│   ├── Barang.java
-│   └── Pembayaran.java
-│
-├── Logic
-│   └── KelolaPesanan.java
-│
-├── Helper
-│   └── ValidasiInput.java
-│
-└── com.mycompany.sistemjastip_minpro2
-    └── SistemJastip_Minpro2.java
+![alt text](?raw=true)
 ```
 
 ### Penjelasan Struktur
@@ -93,7 +75,7 @@ SistemJastip_Minpro2
 
 ---
 
-## 🔄 ALUR PROGRAM
+## 📉 ALUR PROGRAM
 
 Program dijalankan melalui class `SistemJastip_Minpro2`.
 
@@ -491,6 +473,9 @@ public void tampilkanData() {
     System.out.println("Jenis Kulit      : " + jenisKulit);
     System.out.println("Ukuran Produk    : " + ukuranProduk + " ml");
 }
+
+![alt text](?raw=true)
+
 ```
 
 Pada class `KelolaPesanan`, seluruh objek disimpan dalam:
@@ -600,7 +585,7 @@ Hal tersebut memungkinkan pemanggilan method yang sama menghasilkan tampilan tam
 
 ---
 
-## ✨ FITUR KREATIF / PENGEMBANGAN PROGRAM
+## ✨ FITUR PENGEMBANGAN PROGRAM
 
 Selain ketentuan utama dan nilai tambah, program juga memiliki beberapa fitur kreatif yang dikembangkan untuk mendukung fungsi sistem.
 
@@ -752,7 +737,7 @@ Dengan menggunakan `ArrayList`, sistem dapat menyimpan beberapa objek pesanan da
 
 ---
 
-## 🛡️ VALIDASI INPUT
+## ☑️ VALIDASI INPUT
 
 Program memiliki class `ValidasiInput` yang digunakan untuk memastikan input pengguna sesuai dengan batas yang telah ditentukan.
 
@@ -886,7 +871,7 @@ Dokumentasi berikut digunakan untuk menunjukkan hasil implementasi dan pengujian
 
 ### 1. Tampilan Menu Utama
 
-**[Masukkan Screenshot Menu Utama di sini]**
+![alt text](?raw=true)
 
 **Gambar 1. Tampilan Menu Utama Sistem Jasa Titip**
 
@@ -896,7 +881,7 @@ Screenshot menunjukkan menu utama yang menyediakan seluruh pilihan proses dalam 
 
 ### 2. Tambah Pesanan
 
-**[Masukkan Screenshot Proses Tambah Pesanan di sini]**
+![alt text](?raw=true)
 
 **Gambar 2. Proses Penambahan Pesanan**
 
@@ -906,7 +891,7 @@ Screenshot menunjukkan proses pengguna memilih jenis jastip dan memasukkan data 
 
 ### 3. Lihat Pesanan
 
-**[Masukkan Screenshot Hasil Lihat Pesanan di sini]**
+![alt text](?raw=true)
 
 **Gambar 3. Tampilan Data Pesanan**
 
@@ -916,7 +901,7 @@ Screenshot menunjukkan data pesanan yang telah tersimpan dalam `ArrayList` dan d
 
 ### 4. Ubah Pesanan
 
-**[Masukkan Screenshot Proses Ubah Pesanan di sini]**
+![alt text](?raw=true)
 
 **Gambar 4. Proses Perubahan Data Pesanan**
 
@@ -926,7 +911,7 @@ Screenshot menunjukkan proses pencarian pesanan berdasarkan ID dan perubahan dat
 
 ### 5. Hapus Pesanan
 
-**[Masukkan Screenshot Proses Hapus Pesanan di sini]**
+![alt text](?raw=true)
 
 **Gambar 5. Proses Penghapusan Data Pesanan**
 
@@ -936,7 +921,7 @@ Screenshot menunjukkan proses penghapusan pesanan berdasarkan ID yang dimasukkan
 
 ### 6. Lihat Struk
 
-**[Masukkan Screenshot Struk Pesanan di sini]**
+![alt text](?raw=true)
 
 **Gambar 6. Tampilan Struk Pesanan**
 
@@ -946,7 +931,7 @@ Screenshot menunjukkan informasi transaksi dalam bentuk struk, meliputi data pel
 
 ### 7. Ubah Status
 
-**[Masukkan Screenshot Menu Ubah Status di sini]**
+![alt text](?raw=true)
 
 **Gambar 7. Proses Perubahan Status Pesanan**
 
@@ -956,7 +941,7 @@ Screenshot menunjukkan pilihan status yang tersedia untuk memperbarui perkembang
 
 ### 8. Ringkasan Pesanan
 
-**[Masukkan Screenshot Ringkasan Pesanan di sini]**
+![alt text](?raw=true)
 
 **Gambar 8. Tampilan Ringkasan Pesanan**
 
@@ -987,7 +972,7 @@ Screenshot menunjukkan hasil perhitungan keseluruhan data pesanan, seperti total
 
 ---
 
-# 🎯 PENUTUP
+## PENUTUP
 
 Program **Sistem Jasa Titip Belanja Luar Negeri** merupakan penerapan konsep **Object-Oriented Programming (OOP)** dalam studi kasus pengelolaan jasa titip.
 
@@ -998,18 +983,3 @@ Selain konsep utama tersebut, program menerapkan **nilai tambah berupa pendekata
 Program juga dikembangkan dengan beberapa fitur kreatif seperti **Status Pesanan, Struk Pesanan, Ringkasan Pesanan, ID Pesanan Otomatis, serta Perhitungan Biaya Jastip Berdasarkan Berat Barang**.
 
 Dengan adanya pembagian tersebut, program tidak hanya menerapkan konsep OOP yang dibutuhkan dalam Mini Project 2, tetapi juga memiliki pengembangan fitur yang mendukung proses pengelolaan data jasa titip secara lebih terstruktur.
-
----
-
-## 📌 Catatan Sebelum README Dikumpulkan
-
-Pastikan beberapa bagian berikut sudah disesuaikan:
-
-- [ ] Ganti nama anggota kelompok.
-- [ ] Ganti peran setiap anggota.
-- [ ] Masukkan screenshot asli pada bagian **Dokumentasi Program**.
-- [ ] Pastikan screenshot menunjukkan hasil program yang benar-benar dijalankan.
-- [ ] Jika screenshot disimpan dalam folder `images`, gunakan nama file yang konsisten.
-- [ ] Pastikan seluruh class yang dijelaskan di README sesuai dengan project NetBeans.
-- [ ] Pastikan nama project dan package sesuai dengan repository GitHub.
-- [ ] Pastikan tidak ada bagian `[Masukkan Screenshot ...]` yang masih tertinggal saat dikumpulkan.
