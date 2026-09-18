@@ -54,7 +54,8 @@ Tujuan program adalah:
 Program dibagi menjadi beberapa package agar setiap class memiliki fungsi dan tanggung jawab yang lebih terorganisir.
 
 ![alt text](?raw=true)
-```
+
+```text
 
 ### Penjelasan Struktur
 
