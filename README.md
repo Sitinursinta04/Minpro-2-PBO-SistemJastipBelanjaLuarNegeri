@@ -111,40 +111,33 @@ Program menggunakan perulangan `do-while`, sehingga menu akan terus ditampilkan 
 
 ### Alur Utama Program
 
-```text
-Program Dimulai
-      ↓
-Membuat Object yang Dibutuhkan
-      ↓
-Memasukkan Dummy Data
-      ↓
-Menampilkan Menu Utama
-      ↓
-Pengguna Memilih Menu
-      ↓
-Menjalankan Proses Sesuai Pilihan
-      ↓
-Kembali ke Menu Utama
-      ↓
-Pengguna Memilih Keluar?
-   ↙              ↘
- Tidak            Ya
-  ↓                ↓
-Kembali       Program Selesai
-ke Menu
-```
+Program berjalan melalui beberapa tahapan utama berikut:
 
-### Langkah Alur
+- **Program dimulai** dengan menjalankan class `SistemJastip_Minpro2` sebagai bagian utama yang mengatur jalannya sistem.
 
-1. Program dijalankan.
-2. Sistem membuat objek yang diperlukan.
-3. Dummy data dimasukkan ke dalam `ArrayList`.
-4. Menu utama ditampilkan.
-5. Pengguna memilih menu.
-6. Sistem menjalankan proses sesuai pilihan.
-7. Setelah proses selesai, sistem kembali ke menu utama.
-8. Proses berulang sampai pengguna memilih menu **Keluar**.
-9. Program selesai dan `Scanner` ditutup.
+- Sistem kemudian membuat objek `KelolaPesanan` untuk mengelola data pesanan dan `ValidasiInput` untuk membantu memastikan input pengguna sesuai dengan ketentuan.
+
+- Pada tahap awal, sistem secara otomatis menyediakan **dummy data** ke dalam `ArrayList`, sehingga pengguna dapat langsung mencoba fitur yang tersedia.
+
+- Setelah proses awal selesai, sistem menampilkan **menu utama** yang terdiri dari:
+  - Tambah Pesanan
+  - Lihat Pesanan
+  - Ubah Pesanan
+  - Hapus Pesanan
+  - Lihat Struk
+  - Ubah Status
+  - Ringkasan Pesanan
+  - Keluar
+
+- Pengguna memilih menu sesuai dengan kebutuhan, kemudian sistem menjalankan proses berdasarkan pilihan tersebut.
+
+- Setelah proses selesai, sistem kembali menampilkan **menu utama** sehingga pengguna dapat melanjutkan pengelolaan pesanan.
+
+- Proses tersebut berlangsung secara berulang menggunakan perulangan `do-while` hingga pengguna memilih menu **Keluar**.
+
+- Ketika menu **Keluar** dipilih, perulangan dihentikan, `Scanner` ditutup, dan program berakhir.
+
+Dengan alur tersebut, pengguna dapat mengelola pesanan secara berkelanjutan mulai dari menambahkan, melihat, mengubah, menghapus data, melihat struk, memperbarui status, hingga melihat ringkasan pesanan.
 
 ---
 
