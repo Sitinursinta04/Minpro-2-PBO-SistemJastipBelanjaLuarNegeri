@@ -1,41 +1,5 @@
 # 🛍️ SISTEM JASA TITIP BELANJA LUAR NEGERI
 
-## 📑 Daftar Isi
-
-- [📖 Deskripsi Singkat Program](#-deskripsi-singkat-program)
-- [🎯 Tujuan Program](#-tujuan-program)
-- [🧩 Struktur Program](#-struktur-program)
-- [🔄 Alur Program](#-alur-program)
-- [📋 Alur Setiap Menu](#-alur-setiap-menu)
-  - [1. Tambah Pesanan](#1-tambah-pesanan)
-  - [2. Lihat Pesanan](#2-lihat-pesanan)
-  - [3. Ubah Pesanan](#3-ubah-pesanan)
-  - [4. Hapus Pesanan](#4-hapus-pesanan)
-  - [5. Lihat Struk](#5-lihat-struk)
-  - [6. Ubah Status](#6-ubah-status)
-  - [7. Ringkasan Pesanan](#7-ringkasan-pesanan)
-  - [8. Keluar](#8-keluar)
-- [🛠️ Penerapan Konsep OOP](#️-penerapan-konsep-oop)
-  - [1. Encapsulation](#1-encapsulation)
-  - [2. Inheritance](#2-inheritance)
-  - [3. Polymorphism](#3-polymorphism)
-- [⭐ Nilai Tambah](#-nilai-tambah)
-  - [1. Pendekatan MVC Sederhana](#1-pendekatan-mvc-sederhana)
-  - [2. Polymorphism](#2-polymorphism)
-- [✨ Fitur Kreatif / Pengembangan Program](#-fitur-kreatif--pengembangan-program)
-- [📝 CRUD](#-crud)
-- [📦 ArrayList](#-arraylist)
-- [🛡️ Validasi Input](#️-validasi-input)
-- [💾 Dummy Data](#-dummy-data)
-- [🔐 Access Modifier](#-access-modifier)
-- [🏗️ Constructor](#️-constructor)
-- [📸 Dokumentasi Program](#-dokumentasi-program)
-- [📚 Rangkuman Penerapan Konsep](#-rangkuman-penerapan-konsep)
-- [📌 Perbedaan Ketentuan Utama dan Nilai Tambah](#-perbedaan-ketentuan-utama-dan-nilai-tambah)
-- [🎯 Penutup](#-penutup)
-
----
-
 # 📖 DESKRIPSI SINGKAT PROGRAM
 
 **Sistem Jasa Titip Belanja Luar Negeri** merupakan program berbasis Java yang digunakan untuk membantu mengelola data pesanan jasa titip dari luar negeri.
