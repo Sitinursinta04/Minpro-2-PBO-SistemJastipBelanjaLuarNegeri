@@ -467,6 +467,7 @@ public void tampilkanData() {
 ```
 
 ![alt text](https://github.com/Sitinursinta04/PRAKTIKUM_PBO/blob/main/Dokumentasi/Screenshot%202026-09-19%20220220.png?raw=true)
+
 ![alt text](https://github.com/Sitinursinta04/PRAKTIKUM_PBO/blob/main/Dokumentasi/Screenshot%202026-09-19%20220254.png?raw=true)
 
 Pada class `KelolaPesanan`, seluruh objek disimpan dalam:
@@ -844,60 +845,51 @@ Dengan constructor, objek dapat langsung dibuat dengan data awal yang diperlukan
 
 Dokumentasi berikut digunakan untuk menunjukkan hasil implementasi dan pengujian program.
 
-> Catatan: Ganti bagian `[Masukkan Screenshot]` dengan screenshot asli dari program sebelum README dikumpulkan.
-
 ### 1. Tampilan Menu Utama
 
 ![alt text](https://github.com/Sitinursinta04/PRAKTIKUM_PBO/blob/main/Dokumentasi/Screenshot%202026-09-19%20211755.png?raw=true)
 
-Gambar 1. Tampilan Menu Utama Sistem Jasa Titip
-
-Screenshot menunjukkan menu utama yang menyediakan seluruh pilihan proses dalam sistem, mulai dari menambahkan pesanan hingga mengakhiri program.
+Tampilan menunjukkan menu utama yang menyediakan seluruh pilihan proses dalam sistem, mulai dari menambahkan pesanan hingga mengakhiri program.
 
 ---
 
 ### 2. Tambah Pesanan
 
 ![alt text](https://github.com/Sitinursinta04/PRAKTIKUM_PBO/blob/main/Dokumentasi/Screenshot%202026-09-19%20212218.png?raw=true)
+
 ![alt text](https://github.com/Sitinursinta04/PRAKTIKUM_PBO/blob/main/Dokumentasi/Screenshot%202026-09-19%20212629.png?raw=true)
-![alt text](?raw=true)
 
-Gambar 2. Proses Penambahan Pesanan
-
-Screenshot menunjukkan proses pengguna memilih jenis jastip dan memasukkan data pelanggan, barang, berat, jumlah, serta informasi pembayaran.
+Tampilan menunjukkan proses pengguna memilih jenis jastip dan memasukkan data pelanggan, barang, berat, jumlah, serta informasi pembayaran.
 
 ---
 
 ### 3. Lihat Pesanan
 
 ![alt text](https://github.com/Sitinursinta04/PRAKTIKUM_PBO/blob/main/Dokumentasi/Screenshot%202026-09-19%20212739.png?raw=true)
+
 ![alt text](https://github.com/Sitinursinta04/PRAKTIKUM_PBO/blob/main/Dokumentasi/Screenshot%202026-09-19%20212750.png?raw=true)
 
-Gambar 3. Tampilan Data Pesanan
-
-Screenshot menunjukkan data pesanan yang telah tersimpan dalam `ArrayList` dan ditampilkan oleh sistem.
+Tampilan menunjukkan data pesanan yang telah tersimpan dalam `ArrayList` dan ditampilkan oleh sistem.
 
 ---
 
 ### 4. Ubah Pesanan
 
 ![alt text](https://github.com/Sitinursinta04/PRAKTIKUM_PBO/blob/main/Dokumentasi/Screenshot%202026-09-19%20214907.png?raw=true)
+
 ![alt text](https://github.com/Sitinursinta04/PRAKTIKUM_PBO/blob/main/Dokumentasi/Screenshot%202026-09-19%20214920.png?raw=true)
 
-Gambar 4. Proses Perubahan Data Pesanan
-
-Screenshot menunjukkan proses pencarian pesanan berdasarkan ID dan perubahan data pesanan yang telah tersimpan.
+Tampilan menunjukkan proses pencarian pesanan berdasarkan ID dan perubahan data pesanan yang telah tersimpan.
 
 ---
 
 ### 5. Hapus Pesanan
 
 ![alt text](https://github.com/Sitinursinta04/PRAKTIKUM_PBO/blob/main/Dokumentasi/Screenshot%202026-09-19%20215324.png?raw=true)
+
 ![alt text](https://github.com/Sitinursinta04/PRAKTIKUM_PBO/blob/main/Dokumentasi/Screenshot%202026-09-19%20215353.png?raw=true)
 
-Gambar 5. Proses Penghapusan Data Pesanan
-
-Screenshot menunjukkan proses penghapusan pesanan berdasarkan ID yang dimasukkan pengguna.
+Tampilan menunjukkan proses penghapusan pesanan berdasarkan ID yang dimasukkan pengguna.
 
 ---
 
@@ -905,20 +897,17 @@ Screenshot menunjukkan proses penghapusan pesanan berdasarkan ID yang dimasukkan
 
 ![alt text](https://github.com/Sitinursinta04/PRAKTIKUM_PBO/blob/main/Dokumentasi/Screenshot%202026-09-19%20215127.png?raw=true)
 
-Gambar 6. Tampilan Struk Pesanan
-
-Screenshot menunjukkan informasi transaksi dalam bentuk struk, meliputi data pelanggan, barang, biaya jastip, metode pembayaran, total pembayaran, dan status pesanan.
+Tampilan menunjukkan informasi transaksi dalam bentuk struk, meliputi data pelanggan, barang, biaya jastip, metode pembayaran, total pembayaran, dan status pesanan.
 
 ---
 
 ### 7. Ubah Status
 
 ![alt text](https://github.com/Sitinursinta04/PRAKTIKUM_PBO/blob/main/Dokumentasi/Screenshot%202026-09-19%20215214.png?raw=true)
+
 ![alt text](https://github.com/Sitinursinta04/PRAKTIKUM_PBO/blob/main/Dokumentasi/Screenshot%202026-09-19%20215205.png?raw=true)
 
-Gambar 7. Proses Perubahan Status Pesanan
-
-Screenshot menunjukkan pilihan status yang tersedia untuk memperbarui perkembangan pesanan.
+Tampilan menunjukkan pilihan status yang tersedia untuk memperbarui perkembangan pesanan.
 
 ---
 
@@ -926,9 +915,7 @@ Screenshot menunjukkan pilihan status yang tersedia untuk memperbarui perkembang
 
 ![alt text](https://github.com/Sitinursinta04/PRAKTIKUM_PBO/blob/main/Dokumentasi/Screenshot%202026-09-19%20215242.png?raw=true)
 
-Gambar 8. Tampilan Ringkasan Pesanan
-
-Screenshot menunjukkan hasil perhitungan keseluruhan data pesanan, seperti total pesanan, jumlah kategori, total berat, dan total pembayaran.
+Tampilan menunjukkan hasil perhitungan keseluruhan data pesanan, seperti total pesanan, jumlah kategori, total berat, dan total pembayaran.
 
 ---
 
