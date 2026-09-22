@@ -1277,7 +1277,7 @@ Tampilan menunjukkan proses ketika pengguna memilih menu Keluar dan program meng
 | `extends` | Digunakan untuk menerapkan hubungan inheritance. |
 | `super()` | Digunakan untuk memanggil constructor superclass. |
 | `@Override` | Digunakan pada method `tampilkanData()` di subclass. |
-| Polymorphism | Pemanggilan `tampilkanData()` dapat menjalankan versi sesuai objek subclass. |
+| Polymorphism | Diterapkan melalui method overriding dan method overloading. |
 | ArrayList | Digunakan untuk menyimpan kumpulan pesanan. |
 | CRUD | Digunakan untuk menambah, melihat, mengubah, dan menghapus data. |
 | Validasi Input | Digunakan untuk memastikan input sesuai tipe dan batas yang ditentukan. |
